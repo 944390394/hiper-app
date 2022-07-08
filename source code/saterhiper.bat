@@ -23,7 +23,7 @@ echo =  按下回车便可启用  =
 echo =联机时请勿关闭此窗口=
 echo ———————————
 set /p mm=输入你的秘钥：
-hiper v -t %mm%
+hiper v -t ‘%mm%’
 echo.
 echo.
 echo [启动失败，请检查秘钥是否填写正确，或检查是否有文件更新]
