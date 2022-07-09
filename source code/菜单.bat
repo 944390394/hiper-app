@@ -92,6 +92,6 @@ echo 【彩蛋】好臭的数字啊 @a@
 goto menu
 
 :cmdu
-start https://mcer.cn/463.html?ref=azAtwBwzp
+start https://mcer.cn/circle/492.html
 cls
 goto menu
