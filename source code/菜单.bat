@@ -19,6 +19,7 @@ ECHO. -    （7） 创建快捷方式到桌面         -
 ECHO. ---------------------------------------
 ECHO. -  注：无凭证入网每30分钟切断一次连接 -
 ECHO. -      版本：0.3.3   作者：梦游泪世   -
+ECHO. -    （u） 打开网页检查更新           -
 ECHO. -      hiper版本：0708                -
 ECHO. -      BUG反馈/邀请码购买/使用咨询    -
 ECHO. ---------------------------------------
@@ -43,6 +44,10 @@ if “%id%”==“6” goto cmd6
 if “%id%”==“7” goto cmd7
 
 if “%id%”==“114514” goto cmd8
+
+if “%id%”==“u” goto cmdu
+
+if “%id%”==“U” goto cmdu
 
 :cmd1
 start %appdata%\hiper\windows-tap\FIRST_RUN_THIS_SCRIPT.bat 
@@ -84,4 +89,9 @@ goto menu
 
 :cmd8
 echo 【彩蛋】好臭的数字啊 @a@
+goto menu
+
+:cmdu
+start https://mcer.cn/circle/492.html
+cls
 goto menu
