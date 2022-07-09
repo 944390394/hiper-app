@@ -1,6 +1,6 @@
 @echo off
 set path==%path%;%appdata%\hiper
-title "hiper启动程序"
+title "Hiper启动程序"
 if exist "%SystemRoot%\SysWOW64" path %path%;%windir%\SysNative;%SystemRoot%\SysWOW64;%~dp0
 bcdedit >nul
 if '%errorlevel%' NEQ '0' (goto UACPrompt) else (goto UACAdmin)
@@ -23,8 +23,11 @@ echo =  按下回车便可启用  =
 echo =联机时请勿关闭此窗口=
 echo ———————————
 set /p mm=输入你的秘钥：
-hiper v -t ‘%mm%’
+hiper v -t "%mm%"
 echo.
 echo.
-echo [启动失败，请检查秘钥是否填写正确，或检查是否有文件更新]
+echo 抱歉，Hiper启动程序非正常退出，可能原因：
+echo 凭证输入错误
+echo 凭证已超过限期
+echo 使用一次凭证后需要未等待10分钟后才能使用，否侧会报错
 pause
