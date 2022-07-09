@@ -6,7 +6,7 @@ goto menu
 :menu
 ECHO. -----------HiPer启动程序---------------
 ECHO. -    （1）→ 安装HiPer虚拟网卡←      -
-ECHO. -     （↑首次启动请先运行此项↑）    -
+ECHO. -（↑注意注意首次启动请先运行此项）  -
 ECHO. ---------------------------------------
 ECHO. -    （2） 启动HiPer程序 （凭证入网） -
 ECHO. -    （3） 启动HiPer程序（无凭证入网）-
@@ -50,7 +50,15 @@ if “%id%”==“u” goto cmdu
 if “%id%”==“U” goto cmdu
 
 :cmd1
-start %appdata%\hiper\windows-tap\FIRST_RUN_THIS_SCRIPT.bat 
+start %appdata%\hiper\windows-tap\tap-windows-9.21.2.exe
+echo 请勿在安装时修改 Destination Folder，即安装目标文件夹！
+echo
+echo 请放心安装，本程序仅266 KB (272,409字节)
+echo
+echo 如果你安装过了，请勿再次安装！
+echo 
+echo 若想卸载，请运行卸载程序：C:\Program Files\TAP-Windows\Uninstall.exe
+pause
 goto menu::或者是goto menu回到主菜单
 
 :cmd2
