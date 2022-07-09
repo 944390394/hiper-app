@@ -1,7 +1,7 @@
 mode con cols=50 lines=30
 @echo off
 set path==%path%;%appdata%\hiper
-title "hiper聊天程序免费版"
+title "Hiper聊天程序"
 if exist "%SystemRoot%\SysWOW64" path %path%;%windir%\SysNative;%SystemRoot%\SysWOW64;%~dp0
 bcdedit >nul
 if '%errorlevel%' NEQ '0' (goto UACPrompt) else (goto UACAdmin)
@@ -28,5 +28,5 @@ set /p name=输入你的昵称：
 hiper c --names %name%
 echo.
 echo.
-echo [请检查是否已过30分钟，或检查是否有文件更新]
+echo [抱歉，Hiper聊天程序非正常退出，请重新输入 4 启动]
 pause
