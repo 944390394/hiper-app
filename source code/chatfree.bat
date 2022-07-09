@@ -28,5 +28,5 @@ set /p name=输入你的昵称：
 hiper c --names %name%
 echo.
 echo.
-echo [抱歉，Hiper聊天程序非正常退出，请重新输入 4 启动]
+echo [抱歉，Hiper聊天程序非正常退出，请重新输入 4 启动，若启动再次失败，请在HiPer启动菜单中检查软件更新]
 pause
