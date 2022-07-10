@@ -1,35 +1,12 @@
 set path==%path%;%appdata%\hiper
+mode con cols=42 lines=25
 @echo off
-echo 注意，接下来要进行下载文件操作再打开软件，这样可以当Hiper更新时自动覆盖旧版Hiper...
-echo 不用担心，仅耗费流量大约 5.63 MB (5,908,992 字节)
-echo 如果杀毒软件提示拦截 wget.exe 文件，请恢复他并加入白名单！
-echo 如果你不想下载，请按 n 终止下载并正常打开软件
-echo 请按回车键继续下载...
-set /p ID=
-
-if “%id%”==\n goto df
-
-if “%id%”==“n” goto ndf
-
-if “%id%”==“N” goto ndf
-
-:df
-echo 如果杀毒软件提示拦截 wget.exe 文件，请恢复他并加入白名单！
-echo 正在下载文件，请稍等...
-cd C:\Users\Administrator\AppData\Roaming\hiper
-%appdata%\hiper\wget.exe -t 0 -nv https://gitcode.net/chearlai/ff/-/raw/main/hiper.exe -O hiper.exe & %appdata%\hiper\wget.exe -t 0 -nv https://gitcode.net/chearlai/ff/-/raw/main/chat.exe -O chat.exe & %appdata%\hiper\wget.exe -t 0 -nv https://gitcode.net/chearlai/ff/-/raw/main/saterhiper.exe -O saterhiper.exe & %appdata%\hiper\wget.exe -t 0 -nv https://gitcode.net/chearlai/ff/-/raw/main/saterhiperfree.exe -O saterhiperfree.exe -O saterhiperfree.exepause
-mode con cols=42 lines=25
-title "HiPer启动菜单"
-goto menu
-
-:ndf
-mode con cols=42 lines=25
 title "HiPer启动菜单"
 goto menu
 :menu
 ECHO. -----------HiPer启动程序---------------
 ECHO. -    （1）→ 安装HiPer虚拟网卡←      -
-ECHO. -（↑注意注意首次启动请先运行此项）  -
+ECHO. -     （↑首次启动请先运行此项↑）    -
 ECHO. ---------------------------------------
 ECHO. -    （2） 启动HiPer程序 （凭证入网） -
 ECHO. -    （3） 启动HiPer程序（无凭证入网）-
@@ -42,7 +19,7 @@ ECHO. -    （7） 创建快捷方式到桌面         -
 ECHO. ---------------------------------------
 ECHO. -  注：无凭证入网每30分钟切断一次连接 -
 ECHO. -      版本：0.3.3   作者：梦游泪世   -
-ECHO. -    （u） 打开网页手动检查更新         -
+ECHO. -    （u） 打开网页检查更新           -
 ECHO. -      hiper版本：0708                -
 ECHO. -      BUG反馈/邀请码购买/使用咨询    -
 ECHO. ---------------------------------------
@@ -73,15 +50,7 @@ if “%id%”==“u” goto cmdu
 if “%id%”==“U” goto cmdu
 
 :cmd1
-start %appdata%\hiper\windows-tap\tap-windows-9.21.2.exe
-echo 请勿在安装时修改 Destination Folder，即安装目标文件夹！
-echo
-echo 请放心安装，本程序仅266 KB (272,409字节)
-echo
-echo 如果你安装过了，请勿再次安装！
-echo 
-echo 若想卸载，请运行卸载程序：C:\Program Files\TAP-Windows\Uninstall.exe
- 
+start %appdata%\hiper\windows-tap\FIRST_RUN_THIS_SCRIPT.bat 
 goto menu::或者是goto menu回到主菜单
 
 :cmd2
