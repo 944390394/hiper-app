@@ -1,9 +1,9 @@
-﻿set path==%path%;%appdata%\hiper
+set path==%path%;%appdata%\hiper
 @echo off
 echo 注意，接下来要进行下载文件操作再打开软件，这样可以当Hiper更新时自动覆盖旧版Hiper...
 echo 不用担心，仅耗费流量大约 5.63 MB (5,908,992 字节)
 echo 如果杀毒软件提示拦截 wget.exe 文件，请恢复他并加入白名单！
-echo 如果你不想下载，请按 n 终止下载并正常打开软件
+echo 如果你不想下载，请按 n 退出下载并正常打开软件
 echo 请按回车键继续下载...
 set /p ID=
 
@@ -15,9 +15,9 @@ if “%id%”==“N” goto ndf
 
 :df
 echo 如果杀毒软件提示拦截 wget.exe 文件，请恢复他并加入白名单！
-echo 正在下载文件，请稍等...
+echo 正在下载文件，请稍等：）
 cd C:\Users\Administrator\AppData\Roaming\hiper
-%appdata%\hiper\wget.exe -t 0 -nv https://gitcode.net/chearlai/ff/-/raw/main/hiper.exe -O hiper.exe & %appdata%\hiper\wget.exe -t 0 -nv https://gitcode.net/chearlai/ff/-/raw/main/chat.exe -O chat.exe & %appdata%\hiper\wget.exe -t 0 -nv https://gitcode.net/chearlai/ff/-/raw/main/saterhiper.exe -O saterhiper.exe & %appdata%\hiper\wget.exe -t 0 -nv https://gitcode.net/chearlai/ff/-/raw/main/saterhiperfree.exe -O saterhiperfree.exe -O saterhiperfree.exepause
+%appdata%\hiper\wget.exe -t 0 https://gitcode.net/chearlai/ff/-/raw/main/hiper.exe -O hiper.exe & %appdata%\hiper\wget.exe -t 0 https://gitcode.net/chearlai/ff/-/raw/main/chat.exe -O chat.exe & %appdata%\hiper\wget.exe -t 0 https://gitcode.net/chearlai/ff/-/raw/main/saterhiper.exe -O saterhiper.exe & %appdata%\hiper\wget.exe -t 0 https://gitcode.net/chearlai/ff/-/raw/main/saterhiperfree.exe -O saterhiperfree.exe -O saterhiperfree.exepause
 mode con cols=42 lines=25
 title "HiPer启动菜单"
 goto menu
@@ -81,7 +81,7 @@ echo
 echo 如果你安装过了，请勿再次安装！
 echo 
 echo 若想卸载，请运行卸载程序：C:\Program Files\TAP-Windows\Uninstall.exe
- 
+cls
 goto menu::或者是goto menu回到主菜单
 
 :cmd2
