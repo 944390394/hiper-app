@@ -9,6 +9,19 @@ if '%errorlevel%' NEQ '0' (goto UACPrompt) else (goto UACAdmin)
 exit /B
 :UACAdmin
 cd /d "%~dp0"
+if not exist %appdata%\hiper\hiper.exe goto nofile
+goto start
+:nofile
+echo ********************************************
+echo ********************************************
+echo **                                        **
+echo **  未能测到hiper程序，请返回菜单检查更新 **
+echo **                                        **
+echo ********************************************
+echo ********************************************
+pause
+exit
+:start
 echo 当前运行路径是：%CD%
 echo 已获取管理员权限
 set n=0
