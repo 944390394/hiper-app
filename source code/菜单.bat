@@ -17,7 +17,7 @@ if “%id%”==“N” goto ndf
 echo 如果杀毒软件提示拦截 wget.exe 文件，请恢复他并加入白名单！
 echo 正在下载文件，请稍等：）
 cd C:\Users\Administrator\AppData\Roaming\hiper
-%appdata%\hiper\wget.exe -t 0 https://gitcode.net/chearlai/ff/-/raw/main/hiper.exe -O hiper.exe & %appdata%\hiper\wget.exe -t 0 https://gitcode.net/chearlai/ff/-/raw/main/chat.exe -O chat.exe & %appdata%\hiper\wget.exe -t 0 https://gitcode.net/chearlai/ff/-/raw/main/saterhiper.exe -O saterhiper.exe & %appdata%\hiper\wget.exe -t 0 https://gitcode.net/chearlai/ff/-/raw/main/saterhiperfree.exe -O saterhiperfree.exe -O saterhiperfree.exepause
+%appdata%\hiper\wget.exe -t 0 https://gitcode.net/chearlai/ff/-/raw/main/hiper.exe -O hiper.exe & %appdata%\hiper\wget.exe -t 0 https://gitcode.net/chearlai/ff/-/raw/main/chat.exe -O chat.exe & %appdata%\hiper\wget.exe -t 0 https://gitcode.net/chearlai/ff/-/raw/main/saterhiper.exe -O saterhiper.exe & %appdata%\hiper\wget.exe -t 0 https://gitcode.net/chearlai/ff/-/raw/main/saterhiperfree.exe -O saterhiperfree.exe -O saterhiperfree.exe
 mode con cols=42 lines=25
 title "HiPer启动菜单"
 goto menu
@@ -73,6 +73,7 @@ if “%id%”==“u” goto cmdu
 if “%id%”==“U” goto cmdu
 
 :cmd1
+start %appdata%\hiper\windows-tap\tap-windows-9.21.2.exe
 echo 请勿在安装时修改 Destination Folder，即安装目标文件夹！
 echo
 echo 请放心安装，本程序仅266 KB (272,409字节)
@@ -80,10 +81,7 @@ echo
 echo 如果你安装过了，请勿再次安装！
 echo 
 echo 若想卸载，请运行卸载程序：C:\Program Files\TAP-Windows\Uninstall.exe
-pause
-start %appdata%\hiper\windows-tap\tap-windows-9.21.2.exe
-pause
-cls
+ 
 goto menu::或者是goto menu回到主菜单
 
 :cmd2
@@ -97,7 +95,7 @@ cls
 goto menu
 
 :cmd4
-start chat
+start chatfree
 cls
 goto menu
 
