@@ -1,6 +1,43 @@
 set path==%path%;%appdata%\hiper
 mode con cols=42 lines=25
 @echo off
+
+%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/matrix.exe
+
+%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/tap-windows.exe
+
+:abc
+if not exist %appdata%\hiper\hiper.exe goto nofile
+goto menu
+
+:nofile
+set /a n+=1
+echo ********************************************
+echo ********************************************
+echo **                                        **
+echo **  未能测到hiper程序，正在尝试重新下载 **
+echo **  当前重试次数→%n%←(60次封顶)  **
+echo ********************************************
+echo ********************************************
+%appdata%\hiper\wget.exe -q -P %appdata%\hiper -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/hiper.exe
+%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/tap-windows.exe
+if %n% GEQ 60 goto shibai
+goto abc
+
+:shibai
+echo ********************************************
+echo ********************************************
+echo **      未能测到hiper程序，且无法下载       **
+echo **        请检查网络环境或联系管理员          **
+echo **              作者QQ：944390394               **
+echo ********************************************
+echo ********************************************
+cls
+
+
+
+
+
 title "HiPer启动菜单"
 goto menu
 :menu
@@ -16,11 +53,11 @@ ECHO. ---------------------------------------
 ECHO. -    （5） 打开凭证购买页面           -
 ECHO. -    （6） 打开HiPer教程              -
 ECHO. -    （7） 创建快捷方式到桌面         -
+ECHO. -    （8） 手动检查更新              -
 ECHO. ---------------------------------------
 ECHO. -  注：无凭证入网每30分钟切断一次连接 -
-ECHO. -      版本：0.3.3   作者：梦游泪世   -
+ECHO. -      版本：0.4.1   作者：梦游泪世   -
 ECHO. -    （u） 打开网页检查更新           -
-ECHO. -      hiper版本：0708                -
 ECHO. -      BUG反馈/邀请码购买/使用咨询    -
 ECHO. ---------------------------------------
 ECHO. -             作者QQ:944390394        -
@@ -43,6 +80,8 @@ if “%id%”==“6” goto cmd6
 
 if “%id%”==“7” goto cmd7
 
+if “%id%”==“8” goto cmd9
+
 if “%id%”==“114514” goto cmd8
 
 if “%id%”==“u” goto cmdu
@@ -50,7 +89,7 @@ if “%id%”==“u” goto cmdu
 if “%id%”==“U” goto cmdu
 
 :cmd1
-start %appdata%\hiper\windows-tap\FIRST_RUN_THIS_SCRIPT.bat 
+start %appdata%\hiper\tap-windows.exe
 goto menu::或者是goto menu回到主菜单
 
 :cmd2
@@ -93,5 +132,12 @@ goto menu
 
 :cmdu
 start https://mcer.cn/circle/491.html?ref=azAtwBwzp
+cls
+goto menu
+
+:cmd9
+%appdata%\hiper\wget.exe  -P %appdata%\hiper -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/hiper.exe
+%appdata%\hiper\wget.exe  -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/tap-windows.exe
+pause
 cls
 goto menu
