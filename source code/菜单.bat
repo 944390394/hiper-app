@@ -95,7 +95,7 @@ cls
 goto menu
 
 :cmd4
-start chatfree
+start chat
 cls
 goto menu
 
