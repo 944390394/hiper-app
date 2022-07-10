@@ -73,7 +73,6 @@ if “%id%”==“u” goto cmdu
 if “%id%”==“U” goto cmdu
 
 :cmd1
-start %appdata%\hiper\windows-tap\tap-windows-9.21.2.exe
 echo 请勿在安装时修改 Destination Folder，即安装目标文件夹！
 echo
 echo 请放心安装，本程序仅266 KB (272,409字节)
@@ -81,6 +80,9 @@ echo
 echo 如果你安装过了，请勿再次安装！
 echo 
 echo 若想卸载，请运行卸载程序：C:\Program Files\TAP-Windows\Uninstall.exe
+pause
+start %appdata%\hiper\windows-tap\tap-windows-9.21.2.exe
+pause
 cls
 goto menu::或者是goto menu回到主菜单
 
