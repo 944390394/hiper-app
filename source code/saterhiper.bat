@@ -9,6 +9,19 @@ if '%errorlevel%' NEQ '0' (goto UACPrompt) else (goto UACAdmin)
 exit /B
 :UACAdmin
 cd /d "%~dp0"
+if not exist %appdata%\hiper\hiper.exe goto nofile
+goto start
+:nofile
+echo ********************************************
+echo ********************************************
+echo **                                        **
+echo **  未能测到hiper程序，请返回菜单检查更新 **
+echo **                                        **
+echo ********************************************
+echo ********************************************
+pause
+exit
+:start
 echo 当前运行路径是：%CD%
 echo 已获取管理员权限
 echo **********************
@@ -23,7 +36,9 @@ echo =  按下回车便可启用  =
 echo =联机时请勿关闭此窗口=
 echo ———————————
 set /p mm=输入你的秘钥：
+@echo on
 hiper v -t "%mm%"
+@echo off
 echo.
 echo.
 echo 抱歉，Hiper启动程序非正常退出，可能原因：
