@@ -1,6 +1,48 @@
 set path==%path%;%appdata%\hiper
-mode con cols=42 lines=25
+mode con cols=55 lines=27
 @echo off
+
+set /a sj=%random%/512
+set /a yun=%sj%*512
+if %sj% GEQ 120 goto 120
+if %sj% GEQ 100 goto 100
+if %sj% GEQ 90 goto 90
+if %sj% GEQ 80 goto 80
+if %sj% GEQ 60 goto 60
+if %sj% GEQ 50 goto 50
+if %sj% GEQ 30 goto 30
+if %sj% GEQ 20 goto 20
+if %sj% GEQ 0 goto 0
+
+:120
+title "HiPer菜单 ：这次我们更新了114514个特性"
+goto sater
+:120
+title "HiPer菜单 ：当你看到这条tip，你一定就看到了它"
+goto sater
+:90
+title "HiPer菜单 ：前方通往快乐"
+goto sater
+:80
+title "HiPer菜单 ：This is hiper world！"
+goto sater
+:60
+title "HiPer菜单 ：也试试cato！"
+goto sater
+:50
+title "HiPer菜单 ：摸鱼法则"
+goto sater
+:30
+title "HiPer菜单 ：咕咕咕，刷到这条tip需要多少次呢"
+goto sater
+:20
+title "HiPer菜单 ：合理安排时间，享受健康生活"
+goto sater
+:0
+title "HiPer菜单 ：鸽王再世"
+goto sater
+
+:sater
 
 %appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/hiper.exe
 
@@ -32,38 +74,37 @@ echo **        请检查网络环境或联系管理员          **
 echo **              作者QQ：944390394               **
 echo ********************************************
 echo ********************************************
+pause
 cls
-
-
-
-
-
-title "HiPer启动菜单"
 goto menu
+
+
 :menu
-ECHO. -----------HiPer启动程序---------------
-ECHO. -    （1）→ 安装HiPer虚拟网卡←      -
-ECHO. -     （↑首次启动请先运行此项↑）    -
-ECHO. ---------------------------------------
-ECHO. -    （2） 启动HiPer程序 （凭证入网） -
-ECHO. -    （3） 启动HiPer程序（无凭证入网）-
-ECHO. ---------------------------------------
-ECHO. -    （4）启动HiPer聊天室             -
-ECHO. ---------------------------------------
-ECHO. -    （5） 打开凭证购买页面           -
-ECHO. -    （6） 打开HiPer教程              -
-ECHO. -    （7） 创建快捷方式到桌面         -
-ECHO. -    （8） 手动检查更新              -
-ECHO. ---------------------------------------
-ECHO. -  注：无凭证入网每30分钟切断一次连接 -
-ECHO. -      版本：0.4.1   作者：梦游泪世   -
-ECHO. -    （u） 打开网页检查更新           -
-ECHO. -      BUG反馈/邀请码购买/使用咨询    -
-ECHO. ---------------------------------------
-ECHO. -             作者QQ:944390394        -
-ECHO. -          官方①群：235256586        -
-ECHO. -          官方②群：212927890        -
-ECHO. ---------------------------------------
+ECHO.       ---------------HiPer启动程序-----------
+ECHO.       -    （1）→ 安装HiPer虚拟网卡←      -
+ECHO.       -     （↑首次启动请先运行此项↑）    -
+ECHO.       ---------------------------------------
+ECHO.       -    （2） 启动HiPer程序 （凭证入网） -
+ECHO.       -    （3） 启动HiPer程序（无凭证入网）-
+ECHO.       ---------------------------------------
+ECHO.       -    （4）启动HiPer聊天室             -
+ECHO.       ---------------------------------------
+ECHO.       -    （5） 打开凭证购买页面           -
+ECHO.       -    （6） 打开HiPer教程              -
+ECHO.       -    （7） 创建快捷方式到桌面         -
+ECHO.       -    （8） 手动检查hiper更新          -
+ECHO.       -   （u） 打开网页检查 启动程序 更新  -
+ECHO.       ---------------------------------------
+ECHO.       -  注：无凭证入网每30分钟切断一次连接 -
+ECHO.       -      版本：0.4.3   作者：梦游泪世   -
+ECHO.       -      BUG反馈/邀请码购买/使用咨询    -
+ECHO.       -             作者QQ:944390394        -
+ECHO.       -          官方①群：235256586        -
+ECHO.       -          官方②群：212927890        -
+ECHO.       ---------------------------------------
+ECHO.       -        当前日期：%date%    -
+ECHO.       -          当前时间：%time%      -
+ECHO.       ---------------------------------------
 echo.请输入选择项目的序号：
 set /p ID=
 if “%id%”==“1” goto cmd1
@@ -127,7 +168,20 @@ cls
 goto menu
 
 :cmd8
-echo 【彩蛋】好臭的数字啊 @a@
+cls
+echo               【彩蛋】好臭的数字啊 @a@
+ECHO.
+ECHO.
+ECHO.
+ECHO.     -------------------鸣谢列表------------------
+ECHO.     -   梦游泪世    编写本程序，提供更新服务    -
+ECHO.     -   起风了吗    编写本程序，提供帮助        -
+ECHO.     -   烨          提供有趣的标题后缀          -
+ECHO.     ---------------感谢以上人员的大力支持--------
+ECHO. 
+ECHO. 
+ECHO. 
+pause
 goto menu
 
 :cmdu
