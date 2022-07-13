@@ -12,9 +12,10 @@ hiper官网：https://mcer.cn/?ref=azAtwBwzp
 
 hiper作者：猫猫
 
-本程序只是一个方便启动hiper的脚步
+本程序只是一个方便启动hiper的脚本
 
-目前版本：0.3.4
+
+目前版本：0.4.3
 
 注意分别
 
