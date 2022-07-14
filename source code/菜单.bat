@@ -12,7 +12,7 @@ if %sj% GEQ 60 goto 60
 if %sj% GEQ 50 goto 50
 if %sj% GEQ 30 goto 30
 if %sj% GEQ 20 goto 20
-if %sj% GEQ 0 goto 0 
+if %sj% GEQ 0 goto 0
 
 :120
 title "HiPer菜单 ：这次我们更新了114514个特性"
