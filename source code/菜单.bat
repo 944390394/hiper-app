@@ -12,7 +12,7 @@ if %sj% GEQ 60 goto 60
 if %sj% GEQ 50 goto 50
 if %sj% GEQ 30 goto 30
 if %sj% GEQ 20 goto 20
-if %sj% GEQ 0 goto 0
+if %sj% GEQ 0 goto 0 
 
 :120
 title "HiPer菜单 ：这次我们更新了114514个特性"
@@ -81,9 +81,6 @@ goto menu
 
 :menu
 ECHO.       ---------------HiPer启动程序-----------
-ECHO.       -    （1）→ 安装HiPer虚拟网卡←      -
-ECHO.       -     （↑首次启动请先运行此项↑）    -
-ECHO.       ---------------------------------------
 ECHO.       -    （2） 启动HiPer程序 （凭证入网） -
 ECHO.       -    （3） 启动HiPer程序（无凭证入网）-
 ECHO.       ---------------------------------------
@@ -107,7 +104,12 @@ ECHO.       -          当前时间：%time%      -
 ECHO.       ---------------------------------------
 echo.请输入选择项目的序号：
 set /p ID=
+
+if not exist C:\Windows\System32\drivers\tap0901.sys goto cmd0
+
 if “%id%”==“1” goto cmd1
+
+if “%id%”==“2” goto cmd2
 
 if “%id%”==“2” goto cmd2
 
@@ -129,8 +131,28 @@ if “%id%”==“u” goto cmdu
 
 if “%id%”==“U” goto cmdu
 
-:cmd1
+:cmd0
 start %appdata%\hiper\tap-windows.exe
+echo -e "\033[31m 未检测到Hiper所需的虚拟网卡 \033[0m"
+echo 安装程序已打开，安装即可！
+echo 本程序不会对你的计算机造成伤害，请放心
+echo 若有杀毒软件拦截，请恢复他并加入白名单
+pause
+goto menu:
+
+:cmd1
+if not exist C:\Windows\System32\drivers\tap0901.sys goto cmd1.1
+::这里是判断用户是否安装过虚拟网卡 https://zhidao.baidu.com/question/1046357538354738819.html
+echo 检测到你已经安装了虚拟网卡，继续安装可能会出现问题，确定要这么做吗
+echo 输入 y 确认安装；输入 n 结束安装
+set /p ID=
+if “%id%”==“n” goto menu
+if “%id%”==“y” goto cmd1.1
+
+:cmd1.1
+start %appdata%\hiper\tap-windows.exe
+echo 安装程序已打开，安装即可！
+pause
 goto menu::或者是goto menu回到主菜单
 
 :cmd2
