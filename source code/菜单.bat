@@ -176,7 +176,7 @@ pause
 goto Installationtap
 
 :Installationtap
-if not exist C:\Windows\System32\drivers\tap0901.sys gotu Installationtap1
+if not exist C:\Windows\System32\drivers\tap0901.sys goto Installationtap1
 ::这里是判断用户是否安装过虚拟网卡 https://zhidao.baidu.com/question/1046357538354738819.html
 
 : Installationtap1
