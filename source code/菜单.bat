@@ -129,14 +129,14 @@ ECHO.       ---------------------------------------
 ECHO.       -    （4）启动HiPer聊天室             -
 ECHO.       ---------------------------------------
 ECHO.       -    （5） 创建快捷方式到桌面         -
-ECHO.       -    （J） 手动检查文件完整度           -
-ECHO.       -    （U） 手动检查hiper更新           -
+ECHO.       -    （J） 手动检查文件完整度         -
+ECHO.       -    （U） 手动检查hiper更新          -
 ECHO.       -    （H） 打开HiPer帮助              -
 ECHO.       ---------------------------------------
 ECHO.       -       网卡状态：【%tapsater%】          -
 ECHO.       ---------------------------------------
 ECHO.       -  注：无凭证入网每30分钟切断一次连接 -
-ECHO.       -      版本：0.5.0   作者：梦游泪世   -
+ECHO.       -      版本：0.5.1   作者：梦游泪世   -
 ECHO.       -      BUG反馈/邀请码购买/使用咨询    -
 ECHO.       -             作者QQ:944390394        -
 ECHO.       -          官方①群：235256586        -
@@ -176,15 +176,31 @@ pause
 goto Installationtap
 
 :Installationtap
-if not exist C:\Windows\System32\drivers\tap0901.sys goto cmd1.1
+cls
+if not exist C:\Windows\System32\drivers\tap0901.sys goto saterapp
+
 ::这里是判断用户是否安装过虚拟网卡 https://zhidao.baidu.com/question/1046357538354738819.html
-echo 检测到你已经安装了虚拟网卡，继续安装可能会出现问题，确定要这么做吗
-echo 输入 y 确认安装；输入 n 结束安装
+echo         -                                -
+echo         -   检测到你已经安装了虚拟网卡   -
+echo         -       确定要继续安装吗         -
+echo         -                                -
+echo          输入 y 确认安装；输入 n 结束安装
+
 set /p ID=
+if “%id%”==“Y” goto saterapp
+if “%id%”==“y” goto saterapp
+if “%id%”==“N” goto menu
 if “%id%”==“n” goto menu
-echo 安装程序已打开，安装即可！
-echo 本程序不会对你的计算机造成伤害，请放心
-echo 若有杀毒软件拦截，请恢复他并加入白名单
+goto menu
+
+:saterapp
+cls
+echo. -
+echo. -请勿更改安装路径，默认即可
+echo. -安装程序已打开，安装即可！
+echo. -本程序不会对你的计算机造成伤害，请放心
+echo. -若有杀毒软件拦截，请恢复他并加入白名单
+echo. -
 call %appdata%\hiper\tap-windows.exe
 goto menu
 
@@ -207,7 +223,7 @@ goto menu
 
 :cmd5
 @echo off
-set "exe=HiPer启动程序.exe"
+set "exe=HiPer启动程序0.5.1.exe"
 set "lnk=HiPer启动程序"
 mshta VBScript:Execute("Set a=CreateObject(""WScript.Shell""):Set b=a.CreateShortcut(a.SpecialFolders(""Desktop"") & ""\%lnk%.lnk""):b.TargetPath=""%~dp0%exe%"":b.WorkingDirectory=""%~dp0"":b.Save:close")
 echo 完成
@@ -216,17 +232,20 @@ goto menu
 
 
 :zj
+for /F %%i in ('ipconfig /all｜findstr TAP') do ( set drv=%%i)
 cls
 echo ------------------------自检报告-----------------------
 echo 网卡安装程序：【%tapexamine%】
 echo hiper主程序 ：【%hiperexamine%】
-echo 聊天程序：【%chatfreeexamine%】
 echo 免费联机模块：【%saterhiperexamine%】
-echo 凭证联机模块： 【%saterhiperfreeexamine%】
+echo 凭证联机模块：【%saterhiperfreeexamine%】
+echo 聊天程序：【%chatfreeexamine%】
 echo 下载模块：【%wgetexamine%】
 echo 网卡状态：【%tapsater%】
+echo 网卡：【%drv%】
 echo -------------------------------------------------------
 pause
+
 goto menu
 
 :cmd5
