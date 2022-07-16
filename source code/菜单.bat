@@ -176,8 +176,10 @@ pause
 goto Installationtap
 
 :Installationtap
-if not exist C:\Windows\System32\drivers\tap0901.sys goto cmd1.1
+if not exist C:\Windows\System32\drivers\tap0901.sys gotu Installationtap1
 ::这里是判断用户是否安装过虚拟网卡 https://zhidao.baidu.com/question/1046357538354738819.html
+
+: Installationtap1
 echo 检测到你已经安装了虚拟网卡，继续安装可能会出现问题，确定要这么做吗
 echo 输入 y 确认安装；输入 n 结束安装
 set /p ID=
