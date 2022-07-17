@@ -79,6 +79,7 @@ exit
 
 
 :sater
+%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/version.txt
 
 %appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/hiper.exe
 
@@ -112,12 +113,14 @@ echo ********************************************
 echo ********************************************
 pause
 cls
-goto menu
+exit
 
 
 :menu
-mode con cols=55 lines=28
+mode con cols=55 lines=29
+set /P OEM=<%appdata%\hiper\version.txt
 set tapsater=已安装
+set v=0.6.1
 if not exist C:\Windows\System32\drivers\tap0901.sys set tapsater=未安装
 ECHO.       ---------------HiPer启动程序-----------
 ECHO.       -    （1）→ 安装HiPer虚拟网卡←      -
@@ -133,16 +136,17 @@ ECHO.       -    （J） 手动检查文件完整度         -
 ECHO.       -    （U） 手动检查hiper更新          -
 ECHO.       -    （H） 打开HiPer帮助              -
 ECHO.       ---------------------------------------
+ECHO.       -       hiper版本：【%OEM%】           -
 ECHO.       -       网卡状态：【%tapsater%】          -
 ECHO.       ---------------------------------------
 ECHO.       -  注：无凭证入网每30分钟切断一次连接 -
-ECHO.       -      版本：0.5.1   作者：梦游泪世   -
+ECHO.       -      版本：%v%   作者：梦游泪世   -
 ECHO.       -      BUG反馈/邀请码购买/使用咨询    -
 ECHO.       -             作者QQ:944390394        -
 ECHO.       -          官方①群：235256586        -
 ECHO.       -          官方②群：212927890        -
 ECHO.       ---------------------------------------
-ECHO.       -        启动日期：%date%    -
+ECHO.       -        当前日期：%date%    -
 ECHO.       -          启动时间：%time%      -
 ECHO.       ---------------------------------------
 echo.请输入选择项目的序号：
@@ -165,8 +169,14 @@ if “%id%”==“114514” goto cmd8
 if “%id%”==“u” goto UP
 
 if “%id%”==“U” goto UP
+
 if “%id%”==“H” goto help
+
 if “%id%”==“h” goto help
+::以下是给用户测试网络，一般是用不到的
+if “%id%”==“hiper-kit” goto kit
+
+if “%id%”==“hiper-kitmain” goto menu
 goto menu
 
 :az
@@ -234,16 +244,27 @@ goto menu
 :zj
 for /F %%i in ('ipconfig /all｜findstr TAP') do ( set drv=%%i)
 cls
-echo ------------------------自检报告-----------------------
-echo 网卡安装程序：【%tapexamine%】
-echo hiper主程序 ：【%hiperexamine%】
-echo 免费联机模块：【%saterhiperexamine%】
-echo 凭证联机模块：【%saterhiperfreeexamine%】
-echo 聊天程序：【%chatfreeexamine%】
-echo 下载模块：【%wgetexamine%】
-echo 网卡状态：【%tapsater%】
-echo 网卡：【%drv%】
-echo -------------------------------------------------------
+echo. ------------------------自检报告----------------------
+echo. 网卡安装程序：【%tapexamine%】
+echo.
+echo. hiper主程序 ：【%hiperexamine%】     hiper版本：【%OEM%】
+echo.
+echo. 免费联机模块：【%saterhiperexamine%】
+echo.
+echo. 凭证联机模块：【%saterhiperfreeexamine%】
+echo.
+echo. 聊天程序：    【%chatfreeexamine%】
+echo.
+echo. 下载模块：    【%wgetexamine%】
+echo.
+echo. 网卡状态：    【%tapsater%】
+echo.
+echo. 网卡：        【%drv%】
+echo.
+echo. 版本：%v%
+echo.
+echo. 日期：%date%        时间：%time%    
+echo. -------------------------------------------------------
 pause
 
 goto menu
@@ -257,6 +278,8 @@ goto menu
 :UP
 %appdata%\hiper\wget.exe  -P %appdata%\hiper -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/hiper.exe
 %appdata%\hiper\wget.exe  -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/tap-windows.exe
+%appdata%\hiper\wget.exe  -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/version.txt
+goto Title
 pause
 cls
 goto menu
@@ -272,13 +295,66 @@ ECHO.     -------------------鸣谢列表------------------
 ECHO.     -   梦游泪世    编写本程序，提供更新服务    -
 ECHO.     -   起风了吗    编写本程序，提供帮助        -
 ECHO.     -   烨          提供有趣的标题后缀          -
-ECHO.     ---------------感谢以上人员的大力支持--------
+ECHO.     -野生的小乐子 提供非常有用的教程以及资金支持-
+ECHO.     -------------感谢以上人员的大力支持----------
 ECHO. 
 ECHO. 
 ECHO. 
 pause
 goto menu
 
+:kit
+
+%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50 https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/hiper-kit.exe
+if not exist %appdata%\hiper\hiper-kit.exe goto kitcs
+echo.
+echo. 成功
+echo
+pause
+goto menu
+
+:kitcs
+set /a kit+=1
+echo ********************************************
+echo ********************************************
+echo **                                        **
+echo **  未能下载测试程序，正在尝试重新下载 **
+echo **  当前重试次数→%n%←(60次封顶)  **
+echo ********************************************
+echo ********************************************
+%appdata%\hiper\wget.exe -q -P %appdata%\hiper -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/hiper.exe
+%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/tap-windows.exe
+if %kit% GEQ 60 goto shibai
+goto kitcsshibai
+
+:kitcsshibai
+echo ********************************************
+echo ********************************************
+echo **      未能下载测试程序，且无法下载       **
+echo **        请检查网络环境或联系管理员          **
+echo ********************************************
+echo ********************************************
+pause
+cls
+exit
+
+:kitmain
+ECHO.       ---------------kit帮助页面-----------
+ECHO.       -    （1） hiper-kit l                   -
+ECHO.       -    （2） hiper-kit l --server      -
+ECHO.       -    （3） hiper-kit t  -
+ECHO.       -    （4） hiper-kit l --server        -
+ECHO.       -    （H） 回到主菜单                 -
+echo.       ---------------------------------------
+echo.请输入选择项目的序号：
+set /p kit=
+if “%kit%”==“1” hiper-kit l
+if “%kit%”==“2” hiper-kit l --server
+if “%kit%”==“3” hiper-kit t  -
+if “%kit%”==“4” hiper-kit l --server
+if “%kit%”==“H” goto menu
+if “%kit%”==“h” goto menu
+goto kitmain
 
 
 
