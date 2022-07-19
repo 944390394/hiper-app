@@ -173,11 +173,6 @@ if “%id%”==“U” goto UP
 if “%id%”==“H” goto help
 
 if “%id%”==“h” goto help
-::以下是给用户测试网络，一般是用不到的
-if “%id%”==“hiper-kit” goto kit
-
-if “%id%”==“hiper-kitmain” goto menu
-goto menu
 
 :az
 echo [ 未检测到Hiper所需的虚拟网卡 ]
@@ -233,7 +228,7 @@ goto menu
 
 :cmd5
 @echo off
-set "exe=HiPer启动程序0.5.1.exe"
+set "exe=HiPer启动器.exe"
 set "lnk=HiPer启动程序"
 mshta VBScript:Execute("Set a=CreateObject(""WScript.Shell""):Set b=a.CreateShortcut(a.SpecialFolders(""Desktop"") & ""\%lnk%.lnk""):b.TargetPath=""%~dp0%exe%"":b.WorkingDirectory=""%~dp0"":b.Save:close")
 echo 完成
@@ -302,62 +297,6 @@ ECHO.
 ECHO. 
 pause
 goto menu
-
-:kit
-
-%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50 https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/hiper-kit.exe
-if not exist %appdata%\hiper\hiper-kit.exe goto kitcs
-echo.
-echo. 成功
-echo
-pause
-goto menu
-
-:kitcs
-set /a kit+=1
-echo ********************************************
-echo ********************************************
-echo **                                        **
-echo **  未能下载测试程序，正在尝试重新下载 **
-echo **  当前重试次数→%n%←(60次封顶)  **
-echo ********************************************
-echo ********************************************
-%appdata%\hiper\wget.exe -q -P %appdata%\hiper -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/hiper.exe
-%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/tap-windows.exe
-if %kit% GEQ 60 goto shibai
-goto kitcsshibai
-
-:kitcsshibai
-echo ********************************************
-echo ********************************************
-echo **      未能下载测试程序，且无法下载       **
-echo **        请检查网络环境或联系管理员          **
-echo ********************************************
-echo ********************************************
-pause
-cls
-exit
-
-:kitmain
-ECHO.       ---------------kit帮助页面-----------
-ECHO.       -    （1） hiper-kit l                   -
-ECHO.       -    （2） hiper-kit l --server      -
-ECHO.       -    （3） hiper-kit t  -
-ECHO.       -    （4） hiper-kit l --server        -
-ECHO.       -    （H） 回到主菜单                 -
-echo.       ---------------------------------------
-echo.请输入选择项目的序号：
-set /p kit=
-if “%kit%”==“1” hiper-kit l
-if “%kit%”==“2” hiper-kit l --server
-if “%kit%”==“3” hiper-kit t  -
-if “%kit%”==“4” hiper-kit l --server
-if “%kit%”==“H” goto menu
-if “%kit%”==“h” goto menu
-goto kitmain
-
-
-
 
 
 
