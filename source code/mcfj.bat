@@ -1,6 +1,42 @@
+::[Bat To Exe Converter]
+::
+::fBE1pAF6MU+EWH7eyEo5FJ2inIFZ5u1M4THHPm0/NtaKoU9TUfo6GA==
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCiDJFGNyEMzfgpcAR2IM222S+VMuaby7OXn
+::YAwzuBVtJxjWCl3EqQJgSA==
+::ZR4luwNxJguZRRnk
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSDk=
+::cBs/ulQjdF25
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSTk=
+::cRo6pxp7LAbNWATEpCI=
+::egkzugNsPRvcWATEpCI=
+::dAsiuh18IRvcCxnZtBJQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+IeA==
+::cxY6rQJ7JhzQF1fEqQJhZksaHGQ=
+::ZQ05rAF9IBncCkqN+0xwdVsFAlTMbAs=
+::ZQ05rAF9IAHYFVzEqQI9K528k4116O5j2TPuJWcnB29JTsrGp23jke8=
+::eg0/rx1wNQPfEVWB+kM9LVsJDAmBuoNlj0LIbTEkaRhKLZH10SzT/1QoVWhnQA==
+::fBEirQZwNQPfEVWB+kM9LVsJDIFM0Oxh9dU=
+::cRolqwZ3JBvQF1fEqQK15vfTl/cG5o012lmbMwd+AQwDeKtIBGf7ggsDEDNnyGbvJiU=
+::dhA7uBVwLU+EWDk=
+::YQ03rBFzNR3SWATElA==
+::dhAmsQZ3MwfNWATEcoD2rsOMytdIuLNMZg==
+::ZQ0/vhVqMQ3MEVWAtB9wrtmSytxaurhwgm3qiA==
+::Zg8zqx1/OA3MEVWAtB9wrtmSytxaurhwgm3qiA==
+::dhA7pRFwIByZRRkBOq638+g0
+::Zh4grVQjdCiDJFGNyEo5OB5GcAmBOmH0A60ZiA==
+::YB416Ek+ZW8=
+::
+::
+::978f952a14a936cc963da21a135fa983
+::ÒÔÉÏÊÇbat±àÒëÈí¼þÉú³É
+
 @echo off
 set path==%path%;%appdata%\hiper
-title MCå±€åŸŸç½‘æˆ¿é—´ç”Ÿæˆå™¨
+title MC¾ÖÓòÍø·¿¼äÉú³ÉÆ÷
 if exist "%SystemRoot%\SysWOW64" path %path%;%windir%\SysNative;%SystemRoot%\SysWOW64;%~dp0
 bcdedit >nul
 if '%errorlevel%' NEQ '0' (goto UACPrompt) else (goto UACAdmin)
@@ -14,64 +50,64 @@ color 8b
 
 
 :001
-set IP=æš‚æœªè¾“å…¥
-set duanko=æš‚æœªè¾“å…¥
+set IP=ÔÝÎ´ÊäÈë
+set duanko=ÔÝÎ´ÊäÈë
 CLS
-echo     å½“å‰è¿è¡Œè·¯å¾„æ˜¯ï¼š%CD%
-echo     å·²èŽ·å–ç®¡ç†å‘˜æƒé™
+echo     µ±Ç°ÔËÐÐÂ·¾¶ÊÇ£º%CD%
+echo     ÒÑ»ñÈ¡¹ÜÀíÔ±È¨ÏÞ
 echo     **********************
-echo     **æ¬¢è¿Žä½¿ç”¨MCå±€åŸŸç½‘æˆ¿é—´ç”Ÿæˆå™¨**
+echo     **»¶Ó­Ê¹ÓÃMC¾ÖÓòÍø·¿¼äÉú³ÉÆ÷**
 echo     **********************
-echo     *è„šæœ¬ä½œè€…ï¼šæ¢¦æ¸¸æ³ªä¸–  *
-echo     *å‡­è¯ é‚€è¯·ç   æœ‰å”®   *
-echo     * QQï¼š944390394      *
+echo     *½Å±¾×÷Õß£ºÃÎÓÎÀáÊÀ  *
+echo     *Æ¾Ö¤ ÑûÇëÂë  ÓÐÊÛ   *
+echo     * QQ£º944390394      *
 echo   ++++++++++++++++++++++
-echo   =  è¯·è¾“å…¥æˆ¿ä¸»åœ¨HiPerä¸­çš„IP  =
-echo   =   â†“ è¾“å…¥çš„ä¿¡æ¯   â†“ =
+echo   =  ÇëÊäÈë·¿Ö÷ÔÚHiPerÖÐµÄIP  =
+echo   =   ¡ý ÊäÈëµÄÐÅÏ¢   ¡ý =
 echo   =   IP:%IP%   =
-echo   =   æ¸¸æˆç«¯å£:%duanko%   =
-echo   â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
-set /p IP=è¾“å…¥æˆ¿ä¸»åœ¨Hiperä¸­çš„IPåœ°å€ï¼š
+echo   =   ÓÎÏ·¶Ë¿Ú:%duanko%   =
+echo   ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+set /p IP=ÊäÈë·¿Ö÷ÔÚHiperÖÐµÄIPµØÖ·£º
 goto 002
 
 :002
 CLS
-echo     å½“å‰è¿è¡Œè·¯å¾„æ˜¯ï¼š%CD%
-echo     å·²èŽ·å–ç®¡ç†å‘˜æƒé™
+echo     µ±Ç°ÔËÐÐÂ·¾¶ÊÇ£º%CD%
+echo     ÒÑ»ñÈ¡¹ÜÀíÔ±È¨ÏÞ
 echo     **********************
-echo     **æ¬¢è¿Žä½¿ç”¨MCå±€åŸŸç½‘æˆ¿é—´æ£€æµ‹å™¨**
+echo     **»¶Ó­Ê¹ÓÃMC¾ÖÓòÍø·¿¼ä¼ì²âÆ÷**
 echo     **********************
-echo     *è„šæœ¬ä½œè€…ï¼šæ¢¦æ¸¸æ³ªä¸–  *
-echo     *å‡­è¯ é‚€è¯·ç   æœ‰å”®   *
-echo     * QQï¼š944390394      *
+echo     *½Å±¾×÷Õß£ºÃÎÓÎÀáÊÀ  *
+echo     *Æ¾Ö¤ ÑûÇëÂë  ÓÐÊÛ   *
+echo     * QQ£º944390394      *
 echo   ++++++++++++++++++++++
-echo   =  è¯·è¾“å…¥æˆ¿ä¸»åœ¨MCä¸­çš„ç«¯å£  =
-echo   =   â†“ è¾“å…¥çš„ä¿¡æ¯   â†“ =
+echo   =  ÇëÊäÈë·¿Ö÷ÔÚMCÖÐµÄ¶Ë¿Ú  =
+echo   =   ¡ý ÊäÈëµÄÐÅÏ¢   ¡ý =
 echo   =   IP:%IP%  =
-echo   =   æ¸¸æˆç«¯å£:%duanko%  =
-echo   â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
-set /p duanko=è¾“å…¥æˆ¿ä¸»MCä¸­å¼€æ”¾çš„ç«¯å£ï¼š
+echo   =   ÓÎÏ·¶Ë¿Ú:%duanko%  =
+echo   ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+set /p duanko=ÊäÈë·¿Ö÷MCÖÐ¿ª·ÅµÄ¶Ë¿Ú£º
 goto 003
 
 :003
 CLS
-echo     å½“å‰è¿è¡Œè·¯å¾„æ˜¯ï¼š%CD%
-echo     å·²èŽ·å–ç®¡ç†å‘˜æƒé™
+echo     µ±Ç°ÔËÐÐÂ·¾¶ÊÇ£º%CD%
+echo     ÒÑ»ñÈ¡¹ÜÀíÔ±È¨ÏÞ
 echo     **********************
-echo     **æ¬¢è¿Žä½¿ç”¨MCå±€åŸŸç½‘æˆ¿é—´æ£€æµ‹å™¨**
+echo     **»¶Ó­Ê¹ÓÃMC¾ÖÓòÍø·¿¼ä¼ì²âÆ÷**
 echo     **********************
-echo     *è„šæœ¬ä½œè€…ï¼šæ¢¦æ¸¸æ³ªä¸–  *
-echo     *å‡­è¯ é‚€è¯·ç   æœ‰å”®   *
-echo     * QQï¼š944390394      *
+echo     *½Å±¾×÷Õß£ºÃÎÓÎÀáÊÀ  *
+echo     *Æ¾Ö¤ ÑûÇëÂë  ÓÐÊÛ   *
+echo     * QQ£º944390394      *
 echo   ++++++++++++++++++++++
-echo   =  ã€æ­£åœ¨è¿è¡Œä¸­ï¼Œè¯·å‹¿å…³é—­ã€‘ =
-echo   =   â†“ è¾“å…¥çš„ä¿¡æ¯   â†“ =
+echo   =  ¡¾ÕýÔÚÔËÐÐÖÐ£¬ÇëÎð¹Ø±Õ¡¿ =
+echo   =   ¡ý ÊäÈëµÄÐÅÏ¢   ¡ý =
 echo   =   IP:%IP%  =
-echo   =   æ¸¸æˆç«¯å£:%duanko%  = 
-echo   â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
-set /p qd=è¯·ç¡®è®¤ä¿¡æ¯æ— è¯¯ï¼ŒæŒ‰å›žè½¦å¯åŠ¨ç¨‹åº
-if â€œ%qd%â€==â€œOâ€ goto 001
-if â€œ%qd%â€==â€œoâ€ goto 001
+echo   =   ÓÎÏ·¶Ë¿Ú:%duanko%  = 
+echo   ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+set /p qd=ÇëÈ·ÈÏÐÅÏ¢ÎÞÎó£¬°´»Ø³µÆô¶¯³ÌÐò
+if ¡°%qd%¡±==¡°O¡± goto 001
+if ¡°%qd%¡±==¡°o¡± goto 001
 goto 004
 
 
@@ -84,30 +120,35 @@ goto 004
 
 :004
 CLS
-echo     å½“å‰è¿è¡Œè·¯å¾„æ˜¯ï¼š%CD%
-echo     å·²èŽ·å–ç®¡ç†å‘˜æƒé™
+echo     µ±Ç°ÔËÐÐÂ·¾¶ÊÇ£º%CD%
+echo     ÒÑ»ñÈ¡¹ÜÀíÔ±È¨ÏÞ
 echo     **********************
-echo     **æ¬¢è¿Žä½¿ç”¨MCå±€åŸŸç½‘æˆ¿é—´æ£€æµ‹å™¨**
+echo     **»¶Ó­Ê¹ÓÃMC¾ÖÓòÍø·¿¼ä¼ì²âÆ÷**
 echo     **********************
-echo     *è„šæœ¬ä½œè€…ï¼šæ¢¦æ¸¸æ³ªä¸–  *
-echo     *å‡­è¯ é‚€è¯·ç   æœ‰å”®   *
-echo     * QQï¼š944390394      *
+echo     *½Å±¾×÷Õß£ºÃÎÓÎÀáÊÀ  *
+echo     *Æ¾Ö¤ ÑûÇëÂë  ÓÐÊÛ   *
+echo     * QQ£º944390394      *
 echo   ++++++++++++++++++++++
-echo   =  è¯·è¾“å…¥æˆ¿ä¸»åœ¨HiPerä¸­çš„IP  =
-echo   =   â†“ è¾“å…¥çš„ä¿¡æ¯   â†“ =
+echo   =  ÇëÊäÈë·¿Ö÷ÔÚHiPerÖÐµÄIP  =
+echo   =   ¡ý ÊäÈëµÄÐÅÏ¢   ¡ý =
 echo   =   IP:%IP%  =
-echo   =   æ¸¸æˆç«¯å£:%duanko%  =
-echo   â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
-echo æ­£åœ¨å¯åŠ¨ç¨‹åºï¼Œè¯·åˆ·æ–°mcå¤šäººæ¸¸æˆç•Œé¢ï¼Œæ£€æµ‹æ˜¯å¦èƒ½çœ‹åˆ°æˆ¿é—´
+echo   =   ÓÎÏ·¶Ë¿Ú:%duanko%  =
+echo   ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+echo ÕýÔÚÆô¶¯³ÌÐò£¬ÇëË¢ÐÂmc¶àÈËÓÎÏ·½çÃæ£¬¼ì²âÊÇ·ñÄÜ¿´µ½·¿¼ä
 color 2f
 mcb.exe -addr %IP%:%duanko%
 @echo off
 color 4F
 echo.
 echo.
-echo æŠ±æ­‰ï¼ŒMCå±€åŸŸç½‘æˆ¿é—´ç”Ÿæˆå™¨éžæ­£å¸¸é€€å‡ºï¼Œå¯èƒ½åŽŸå› ï¼š
-echo IPè¾“å…¥é”™è¯¯
-echo æˆ¿ä¸»æœªåŠ å…¥HIPER
-echo åŠ å…¥æ–¹æœªåŠ å…¥HIPER
+echo ±§Ç¸£¬MC¾ÖÓòÍø·¿¼äÉú³ÉÆ÷·ÇÕý³£ÍË³ö£¬¿ÉÄÜÔ­Òò£º
+echo IPÊäÈë´íÎó
+echo ·¿Ö÷Î´¼ÓÈëHIPER
+echo ¼ÓÈë·½Î´¼ÓÈëHIPER
 pause
 exit
+
+
+
+
+

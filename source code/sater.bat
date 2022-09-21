@@ -1,35 +1,362 @@
+::[Bat To Exe Converter]
+::
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCiDJFGNyEMhLhZBAV2AOH7qS+VMuaby7OXn
+::YAwzuBVtJxjWCl3EqQJgSA==
+::ZR4luwNxJguZRRnk
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSDk=
+::cBs/ulQjdF+5
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSDk=
+::cRo6pxp7LAbNWATEpCI=
+::egkzugNsPRvcWATEpCI=
+::dAsiuh18IRvcCxnZtBJQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+IeA==
+::cxY6rQJ7JhzQF1fEqQJgZksaGErTXA==
+::ZQ05rAF9IBncCkqN+0xwdVsEAlTMaCXrZg==
+::ZQ05rAF9IAHYFVzEqQI4IQtRXoFl8eN159U=
+::eg0/rx1wNQPfEVWB+kM9LVsJDAyLLG6og1LRYCcajw==
+::fBEirQZwNQPfEVWB+kM9LVsJDAyLLG6og1LRYCcajw==
+::cRolqwZ3JBvQF1fEqQI4IQtRXoFl8eN159U=
+::dhA7uBVwLU+EWDk=
+::YQ03rBFzNR3SWATElA==
+::dhAmsQZ3MwfNWATEcoD2rsOMytdIuLNMZg==
+::ZQ0/vhVqMQ3MEVWAtB9wSA==
+::Zg8zqx1/OA3MEVWAtB9wSA==
+::dhA7pRFwIByZRRnk
+::Zh4grVQjdCiDJFGNyEo5OB5GcBeDKG6oSLAE7Yg=
+::YB416Ek+ZW8=
+::
+::
+::978f952a14a936cc963da21a135fa983
 @echo off
-%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50 https://ä¸ºäº†å®‰å…¨æ­¤éƒ¨åˆ†ä¸å¼€æ”¾.cos.ap-shanghai.myqcloud.com/res/menu.exe
-if not exist %appdata%\hiper\menu.exe goto cs
-goto sater
+mode con cols=50 lines=20
+set path==%path%;%appdata%\hiper
+title HiperÆô¶¯³ÌÐò
+if exist "%SystemRoot%\SysWOW64" path %path%;%windir%\SysNative;%SystemRoot%\SysWOW64;%~dp0
+bcdedit >nul
+if '%errorlevel%' NEQ '0' (goto UACPrompt) else (goto UACAdmin)
+:UACPrompt
+%1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
+exit /B
+:UACAdmin
+cd /d "%~dp0"
+if not exist %appdata%\hiper\hiper.exe goto nofile
+goto hiperplus
 
-:cs
-cls
-set /a n+=1
+:nofile
 echo ********************************************
 echo ********************************************
 echo **                                        **
-echo ** æœªèƒ½è¿žæŽ¥åˆ°æ–‡ä»¶æœåŠ¡å™¨ï¼Œæ­£åœ¨å°è¯•é‡æ–°è¿žæŽ¥ **
-echo **     å½“å‰é‡è¯•æ¬¡æ•°â†’%n%â†(60æ¬¡å°é¡¶)       **
-echo ********************************************
-echo ********************************************
-%appdata%\hiper\wget.exe -q -P %appdata%\hiper -S -N -t 50  https://ä¸ºäº†å®‰å…¨æ­¤éƒ¨åˆ†ä¸å¼€æ”¾.cos.ap-shanghai.myqcloud.com/res/menu.exe
-if %n% GEQ 60 goto shibai
-goto cs
-
-:shibai
-cls
-echo ********************************************
-echo ********************************************
-echo **            æœªèƒ½è¿žæŽ¥æ–‡ä»¶æœåŠ¡å™¨          **
-echo **        è¯·æ£€æŸ¥ç½‘ç»œçŽ¯å¢ƒæˆ–è”ç³»ç®¡ç†å‘˜      **
-echo **            ä½œè€…QQï¼š944390394           **
+echo **  Î´ÄÜ²âµ½hiper³ÌÐò£¬Çë·µ»Ø²Ëµ¥¼ì²é¸üÐÂ **
+echo **                                        **
 echo ********************************************
 echo ********************************************
 pause
 exit
 
 
-:sater 
-start %appdata%\hiper\menu.exe
+
+:hiperplus
+color 8b
+set config=1
+if not exist %appdata%\hiper\config.yml set config=0
+if %config%==1  goto cz
+if %config%==0  goto bcz
+
+:cz
+color 2f
+cls
+echo       ***************************************
+echo       ****   »¶Ó­Ê¹ÓÃHiper¿ìËÙÆô¶¯³ÌÐò   ****
+echo       ***************************************
+echo       **       ¡ú Ä¿Ç°ÒÑ¼ì²éµ½Ö¤Êé¡û       **
+echo       **    ÇëÈ·±£ÄãµÄÆ¾Ö¤ÔÚ ¡ú ÓÐÐ§ÆÚÄÚ ¡û**
+echo       **     Èç¹ýÆÚÇëÊäÈëNÖØÐÂÏÂÔØÖ¤Êé     **
+echo       ***************************************
+echo.
+set /p aaa=°´ÈÎÒâ¼ü¼ÌÐøÆô¶¯Hiper£¬ÊäÈëNÖØÐÂÏÂÔØÖ¤Êé
+if ¡°%aaa%¡±==¡°N¡± goto bcz
+if ¡°%aaa%¡±==¡°n¡± goto bcz
+goto zc
+
+
+:bcz
+color 8b
+CLS
+echo   µ±Ç°ÔËÐÐÂ·¾¶ÊÇ£º
+echo   %CD%
+echo   ÒÑ»ñÈ¡¹ÜÀíÔ±È¨ÏÞ
+echo   ***************************
+echo   **»¶Ó­Ê¹ÓÃÃÎÓÎHiPerÆô¶¯Æ÷**
+echo   ***************************
+echo   *    ½Å±¾×÷Õß£ºÃÎÓÎÀáÊÀ   *
+echo   *    Æ¾Ö¤ ÑûÇëÂë  ÓÐÊÛ    *
+echo   *    QQ: 944390394        *
+echo   +++++++++++++++++++++++++++
+echo    =   °ÑÃØÔ¿ÊäÈëµ½ÏÂ·½    =
+echo    =   °´ÏÂ»Ø³µ±ã¿ÉÆôÓÃ    =
+echo    = Áª»úÊ±ÇëÎð¹Ø±Õ´Ë´°¿Ú  =
+echo    ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+set plus=error
+set /p plus=ÊäÈëÄãµÄÃØÔ¿£º
+color 2f
+if not exist %appdata%\hiper\token\%plus%.yml goto xz
+@echo off
+goto 01
+
+:xz
+if %plus%==error goto wsr
+%appdata%\hiper\wget.exe -q -P %appdata%\hiper\token -S -N -t 50  "https://cert.mcer.cn/%plus%.yml" 
+if not exist %appdata%\hiper\token\%plus%.yml goto wfxz
+goto 01
+
+
+:wsr
+color 4F
+cls
+echo   ++++++++++++++++++++++++++++++
+echo   =  ÄãËÆºõÃ»ÓÐÊäÈëÈÎºÎÆ¾Ö¤Å¶  =
+echo   =     ÔÚÊäÈëÒ»´ÎÊÔÊÔ°É       =
+echo   =  Ã»ÓÐÆ¾Ö¤¿ÉÊÇÃ»°ì·¨Æô¶¯µÄ  =
+echo   ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+pause > NUL
+goto bcz
+
+:wfxz
+color 4F
+cls
+echo   ++++++++++++++++++++++++++++++
+echo   = ÎÒÎÞ·¨Í¨¹ýÄãµÄÃÜÔ¿ÏÂÔØÖ¤Êé =
+echo   = Çë¼ì²éÃÜÔ¿ÊÇ·ñ³¬¹ýÏÂÔØÊ±Ð§ =
+echo   =  »òÕßÑ°ÇóÈºÄÚ¹ÜÀíÔ±µÄ°ïÖú  =
+echo   ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+pause > NUL
+start menu.exe
 exit
+
+:01
+del %appdata%\hiper\config.yml 
+copy %appdata%\hiper\token\%plus%.yml %appdata%\hiper\config.yml 
+set config=1
+if not exist %appdata%\hiper\config.yml set config=0
+if %config%==0  goto sb
+if %config%==1  goto zc
+@echo off
+color 4F
+echo.
+echo.
+echo ±§Ç¸£¬HiperÆô¶¯³ÌÐò·ÇÕý³£ÍË³ö£¬¿ÉÄÜÔ­Òò£º
+echo Æ¾Ö¤ÊäÈë´íÎó
+echo Æ¾Ö¤ÒÑ³¬¹ýÏÞÆÚ
+echo 
+pause
+exit
+
+:zc
+color 8b
+@echo off
+CLS
+echo   µ±Ç°ÔËÐÐÂ·¾¶ÊÇ£º
+echo   %CD%
+echo   ÒÑ»ñÈ¡¹ÜÀíÔ±È¨ÏÞ
+echo   **********************
+echo   **»¶Ó­Ê¹ÓÃHiper Plus³ÌÐò**
+echo   **********************
+echo   *½Å±¾×÷Õß£ºÃÎÓÎÀáÊÀ  *
+echo   *Æ¾Ö¤ ÑûÇëÂë  ÓÐÊÛ   *
+echo   * QQ£º944390394      *
+echo   ++++++++++++++++++++++
+echo   =Áª»úÊ±ÇëÎð¹Ø±Õ´Ë´°¿Ú=
+echo   ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+start %appdata%\hiper\log.exe 
+::Æô¶¯hiper
+start %appdata%\hiper\Daemon.exe
+goto GUI1
+
+
+@echo off
+:GUI1
+set myip=Î´¼ì²âµ½HiPerÖÐµÄIP
+:: »ñÈ¡±¾»úIP
+:: ½«ipconfigµÄ½á¹û´«¸øfind£¬»ñµÃipconfig½á¹ûÖÐ´øipv4µÄÐÐ
+:: forÑ­»·¶ÔÃ¿ÐÐ¶¼Ö´ÐÐ£ºÌáÈ¡IP¸³¸ømyip¡£
+:: /fµÄ×÷ÓÃÊÇÈÃfor´¦Àí×Ö·û´®ÖÐµÄÄÚÈÝ£¬Í¨³£Çé¿öÏÂ£¬²»´ø/fµÄforÃüÁî»á´¦ÀíÎÄ¼þÃû£¬´ø/f»á´¦ÀíÎÄ¼þÄÚµÄÄÚÈÝ
+:: forÃüÁîÄ¬ÈÏÊ¹ÓÃ¿Õ¸ñ·û¡¢ÖÆ±í·û½«Ã¿ÐÐÄÚÈÝ·ÖÎª¼¸¸öÔªËØ£¬tokens=16ÊÇµÚ16¸öÔªËØ¼´ipÖµ
+
+for /f "tokens=16" %%i in ('ipconfig ^|find "6.0"') do (
+set myip=%%i
+:: Õý³£Çé¿öÏÂfind²éÑ¯Ö»ÓÐÒ»ÐÐ½á¹û£¬Èç¹ûÖ÷»ú°²×°ÁËÐéÄâ»úÔò»áÓÐ¶à¸öÊÊÅäÆ÷ÓÐipµØÖ·¡£µÚÒ»¸ö²ÅÊÇ±¾»úIP£¬¹ÊÊ¹ÓÃgoto±£Ö¤forÖ»Ö´ÐÐÒ»´Î¾ÍÌø³öÑ­»·£¬·ÀÖ¹ºóÐømyipµÄÖµ±»¸²¸Ç
+goto yunxin
+)
+cls
+echo  ------------------------------------------------
+echo  -                 HiPer  Æô¶¯ÖÐ
+echo  - 
+echo  -    µ±Ç°×´Ì¬£ºÕýÔÚ¼ì²âIPÖÐ
+echo  -                 
+echo  -                  ¡¾#****¡¿
+echo  -                   
+echo  -    ÍøÂçµØÖ·£º%myip%
+echo  ------------------------------------------------
+timeout /t 1 /nobreak > NUL
+if %myip%==Î´¼ì²âµ½HiPerÖÐµÄIP goto GUI2
+goto yunxin
+
+:GUI2
+set myip=Î´¼ì²âµ½HiPerÖÐµÄIP
+:: »ñÈ¡±¾»úIP
+:: ½«ipconfigµÄ½á¹û´«¸øfind£¬»ñµÃipconfig½á¹ûÖÐ´øipv4µÄÐÐ
+:: forÑ­»·¶ÔÃ¿ÐÐ¶¼Ö´ÐÐ£ºÌáÈ¡IP¸³¸ømyip¡£
+:: /fµÄ×÷ÓÃÊÇÈÃfor´¦Àí×Ö·û´®ÖÐµÄÄÚÈÝ£¬Í¨³£Çé¿öÏÂ£¬²»´ø/fµÄforÃüÁî»á´¦ÀíÎÄ¼þÃû£¬´ø/f»á´¦ÀíÎÄ¼þÄÚµÄÄÚÈÝ
+:: forÃüÁîÄ¬ÈÏÊ¹ÓÃ¿Õ¸ñ·û¡¢ÖÆ±í·û½«Ã¿ÐÐÄÚÈÝ·ÖÎª¼¸¸öÔªËØ£¬tokens=16ÊÇµÚ16¸öÔªËØ¼´ipÖµ
+
+for /f "tokens=16" %%i in ('ipconfig ^|find "6.0"') do (
+set myip=%%i
+:: Õý³£Çé¿öÏÂfind²éÑ¯Ö»ÓÐÒ»ÐÐ½á¹û£¬Èç¹ûÖ÷»ú°²×°ÁËÐéÄâ»úÔò»áÓÐ¶à¸öÊÊÅäÆ÷ÓÐipµØÖ·¡£µÚÒ»¸ö²ÅÊÇ±¾»úIP£¬¹ÊÊ¹ÓÃgoto±£Ö¤forÖ»Ö´ÐÐÒ»´Î¾ÍÌø³öÑ­»·£¬·ÀÖ¹ºóÐømyipµÄÖµ±»¸²¸Ç
+goto yunxin
+)
+cls
+echo  ------------------------------------------------
+echo  -                 HiPer  Æô¶¯ÖÐ
+echo  - 
+echo  -    µ±Ç°×´Ì¬£ºÕýÔÚ¼ì²âIPÖÐ
+echo  -                 
+echo  -                  ¡¾*#***¡¿
+echo  -                   
+echo  -    ÍøÂçµØÖ·£º%myip%
+echo  ------------------------------------------------
+timeout /t 1 /nobreak > NUL
+if %myip%==Î´¼ì²âµ½HiPerÖÐµÄIP goto GUI3
+goto yunxin
+
+:GUI3
+set myip=Î´¼ì²âµ½HiPerÖÐµÄIP
+:: »ñÈ¡±¾»úIP
+:: ½«ipconfigµÄ½á¹û´«¸øfind£¬»ñµÃipconfig½á¹ûÖÐ´øipv4µÄÐÐ
+:: forÑ­»·¶ÔÃ¿ÐÐ¶¼Ö´ÐÐ£ºÌáÈ¡IP¸³¸ømyip¡£
+:: /fµÄ×÷ÓÃÊÇÈÃfor´¦Àí×Ö·û´®ÖÐµÄÄÚÈÝ£¬Í¨³£Çé¿öÏÂ£¬²»´ø/fµÄforÃüÁî»á´¦ÀíÎÄ¼þÃû£¬´ø/f»á´¦ÀíÎÄ¼þÄÚµÄÄÚÈÝ
+:: forÃüÁîÄ¬ÈÏÊ¹ÓÃ¿Õ¸ñ·û¡¢ÖÆ±í·û½«Ã¿ÐÐÄÚÈÝ·ÖÎª¼¸¸öÔªËØ£¬tokens=16ÊÇµÚ16¸öÔªËØ¼´ipÖµ
+
+for /f "tokens=16" %%i in ('ipconfig ^|find "6.0"') do (
+set myip=%%i
+:: Õý³£Çé¿öÏÂfind²éÑ¯Ö»ÓÐÒ»ÐÐ½á¹û£¬Èç¹ûÖ÷»ú°²×°ÁËÐéÄâ»úÔò»áÓÐ¶à¸öÊÊÅäÆ÷ÓÐipµØÖ·¡£µÚÒ»¸ö²ÅÊÇ±¾»úIP£¬¹ÊÊ¹ÓÃgoto±£Ö¤forÖ»Ö´ÐÐÒ»´Î¾ÍÌø³öÑ­»·£¬·ÀÖ¹ºóÐømyipµÄÖµ±»¸²¸Ç
+goto yunxin
+)
+cls
+echo  ------------------------------------------------
+echo  -                 HiPer  Æô¶¯ÖÐ
+echo  - 
+echo  -    µ±Ç°×´Ì¬£ºÕýÔÚ¼ì²âIPÖÐ
+echo  -                 
+echo  -                  ¡¾**#**¡¿
+echo  -                   
+echo  -    ÍøÂçµØÖ·£º%myip%
+echo  ------------------------------------------------
+timeout /t 1 /nobreak > NUL
+if %myip%==Î´¼ì²âµ½HiPerÖÐµÄIP goto GUI4
+goto yunxin
+
+:GUI4
+set myip=Î´¼ì²âµ½HiPerÖÐµÄIP
+:: »ñÈ¡±¾»úIP
+:: ½«ipconfigµÄ½á¹û´«¸øfind£¬»ñµÃipconfig½á¹ûÖÐ´øipv4µÄÐÐ
+:: forÑ­»·¶ÔÃ¿ÐÐ¶¼Ö´ÐÐ£ºÌáÈ¡IP¸³¸ømyip¡£
+:: /fµÄ×÷ÓÃÊÇÈÃfor´¦Àí×Ö·û´®ÖÐµÄÄÚÈÝ£¬Í¨³£Çé¿öÏÂ£¬²»´ø/fµÄforÃüÁî»á´¦ÀíÎÄ¼þÃû£¬´ø/f»á´¦ÀíÎÄ¼þÄÚµÄÄÚÈÝ
+:: forÃüÁîÄ¬ÈÏÊ¹ÓÃ¿Õ¸ñ·û¡¢ÖÆ±í·û½«Ã¿ÐÐÄÚÈÝ·ÖÎª¼¸¸öÔªËØ£¬tokens=16ÊÇµÚ16¸öÔªËØ¼´ipÖµ
+
+for /f "tokens=16" %%i in ('ipconfig ^|find "6.0"') do (
+set myip=%%i
+:: Õý³£Çé¿öÏÂfind²éÑ¯Ö»ÓÐÒ»ÐÐ½á¹û£¬Èç¹ûÖ÷»ú°²×°ÁËÐéÄâ»úÔò»áÓÐ¶à¸öÊÊÅäÆ÷ÓÐipµØÖ·¡£µÚÒ»¸ö²ÅÊÇ±¾»úIP£¬¹ÊÊ¹ÓÃgoto±£Ö¤forÖ»Ö´ÐÐÒ»´Î¾ÍÌø³öÑ­»·£¬·ÀÖ¹ºóÐømyipµÄÖµ±»¸²¸Ç
+goto yunxin
+)
+cls
+echo  ------------------------------------------------
+echo  -                 HiPer  Æô¶¯ÖÐ
+echo  - 
+echo  -    µ±Ç°×´Ì¬£ºÕýÔÚ¼ì²âIPÖÐ
+echo  -                 
+echo  -                  ¡¾***#*¡¿
+echo  -                   
+echo  -    ÍøÂçµØÖ·£º%myip%
+echo  ------------------------------------------------
+timeout /t 1 /nobreak > NUL
+if %myip%==Î´¼ì²âµ½HiPerÖÐµÄIP goto GUI5
+goto yunxin
+
+:GUI5
+set myip=Î´¼ì²âµ½HiPerÖÐµÄIP
+:: »ñÈ¡±¾»úIP
+:: ½«ipconfigµÄ½á¹û´«¸øfind£¬»ñµÃipconfig½á¹ûÖÐ´øipv4µÄÐÐ
+:: forÑ­»·¶ÔÃ¿ÐÐ¶¼Ö´ÐÐ£ºÌáÈ¡IP¸³¸ømyip¡£
+:: /fµÄ×÷ÓÃÊÇÈÃfor´¦Àí×Ö·û´®ÖÐµÄÄÚÈÝ£¬Í¨³£Çé¿öÏÂ£¬²»´ø/fµÄforÃüÁî»á´¦ÀíÎÄ¼þÃû£¬´ø/f»á´¦ÀíÎÄ¼þÄÚµÄÄÚÈÝ
+:: forÃüÁîÄ¬ÈÏÊ¹ÓÃ¿Õ¸ñ·û¡¢ÖÆ±í·û½«Ã¿ÐÐÄÚÈÝ·ÖÎª¼¸¸öÔªËØ£¬tokens=16ÊÇµÚ16¸öÔªËØ¼´ipÖµ
+
+for /f "tokens=16" %%i in ('ipconfig ^|find "6.0"') do (
+set myip=%%i
+:: Õý³£Çé¿öÏÂfind²éÑ¯Ö»ÓÐÒ»ÐÐ½á¹û£¬Èç¹ûÖ÷»ú°²×°ÁËÐéÄâ»úÔò»áÓÐ¶à¸öÊÊÅäÆ÷ÓÐipµØÖ·¡£µÚÒ»¸ö²ÅÊÇ±¾»úIP£¬¹ÊÊ¹ÓÃgoto±£Ö¤forÖ»Ö´ÐÐÒ»´Î¾ÍÌø³öÑ­»·£¬·ÀÖ¹ºóÐømyipµÄÖµ±»¸²¸Ç
+goto yunxin
+)
+cls
+echo  ------------------------------------------------
+echo  -                 HiPer  Æô¶¯ÖÐ
+echo  - 
+echo  -    µ±Ç°×´Ì¬£ºÕýÔÚ¼ì²âIPÖÐ
+echo  -                 
+echo  -                  ¡¾****#¡¿
+echo  -                   
+echo  -    ÍøÂçµØÖ·£º%myip%
+echo  ------------------------------------------------
+timeout /t 1 /nobreak > NUL
+if %myip%==Î´¼ì²âµ½HiPerÖÐµÄIP goto GUI1
+goto yunxin
+
+
+
+
+
+
+
+:yunxin
+set tc=0
+color 2f
+cls
+echo  ------------------------------------------------
+echo  -                 HiPer  ÔËÐÐÖÐ
+echo  -    Çá¿ìÈç·çx°²ÈçÅÍÊ¯-×î¼Ñ¿çÇøÓò×éÍø·½°¸     
+echo  - 
+echo  -    µ±Ç°×´Ì¬£ºÆô¶¯³É¹¦
+echo  -
+echo  -    ÍøÂçµØÖ·£º%myip% ÓÎÏ·¶Ë¿Ú£º%duankou%
+echo  ------------------------------------------------          
+echo  -   £¨1£©ÊäÈëÓÎÏ·¶Ë¿ÚºÅ £¨2£©¿ª·ÅÓÎÏ··À»ðÇ½(´ý¿ª·¢)   
+echo  -                       
+echo  -   £¨3£©PCL(´ý¿ª·¢)   £¨4£©HMCL(´ý¿ª·¢)
+echo  -
+::echo  -   £¨3£©Éú³ÉPCLÁª»úÂë  £¨4£©Éú³ÉHMCLÁª»úÂë
+echo  -   £¨5£©mc·¿¼ä£¨¼ÓÈë·½Ê¹ÓÃ£©£¨¼´½«¿ª·Å£©
+echo  -         (N)ÍË³öÃÎÓÎÁª»úÆô¶¯Æ÷
+echo  ------------------------------------------------
+set /p tc=ÇëÊäÈëÑ¡ÔñÏîÄ¿µÄÐòºÅ£º
+if %tc%==N goto tc
+if %tc%==n goto tc
+goto yunxin
+
+:tc
+taskkill /f /im hiper.exe
+taskkill /f /im Daemon.exe
+exit
+
+:sb
+color 4F
+echo ±§Ç¸£¬HiperÆô¶¯³ÌÐò·ÇÕý³£ÍË³ö£¬¿ÉÄÜÔ­Òò£º
+echo Æ¾Ö¤ÊäÈë´íÎó
+echo Æ¾Ö¤ÒÑ³¬¹ýÏÞÆÚ
+pause
+start menu.exe
+
+
+
+

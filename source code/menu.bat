@@ -1,3 +1,45 @@
+::[Bat To Exe Converter]
+::
+::fBE1pAF6MU+EWH7eyEo5FBNdXAGQXA==
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCiDJFGNyEM9L0lTAQbUaDuwS+VMuaby7OXn
+::YAwzuBVtJxjWCl3EqQJgSA==
+::ZR4luwNxJguZRRnk
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSDk=
+::cBs/ulQjdF25
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSDk=
+::cRo6pxp7LAbNWATEpCI=
+::egkzugNsPRvcWATEpSI=
+::dAsiuh18IRvcCxnZtBJQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+IeA==
+::cxY6rQJ7JhzQF1fEqQJhZksaHGQ=
+::ZQ05rAF9IBncCkqN+0xwdVsFAlTMbAs=
+::ZQ05rAF9IAHYFVzEqQI4IQtRXoxtwO5X8zrAAG01A21cUcLBvYI=
+::eg0/rx1wNQPfEVWB+kM9LVsJDAyLLG6ojlrgbQUOYDZvJ4Px0znM91Myug==
+::fBEirQZwNQPfEVWB+kM9LVsJDAyLLG6ojlrgbQUOYDZvJ4Px0znM91Myug==
+::cRolqwZ3JBvQF1fEqQJQ
+::dhA7uBVwLU+EWDk=
+::YQ03rBFzNR3SWATElA==
+::dhAmsQZ3MwfNWATEcoD2rsOMytdIuLNMZg==
+::ZQ0/vhVqMQ3MEVWAtB9wrtmSytxaurhwgm3qiA==
+::Zg8zqx1/OA3MEVWAtB9wrtmSytxaurhwgm3qiA==
+::dhA7pRFwIByZRRkCNoS28MPTtuAF8Kc+3lWYMCJ/MhYCUax9
+::Zh4grVQjdCiDJFGNyE81Jg4aSRyHXA==
+::YB416Ek+ZW8=
+::
+::
+::978f952a14a936cc963da21a135fa983
+::ÒÔÉÏÊÇbat±àÒëÈí¼şÉú³É
+
+
+
+
+
+
+
 set path==%path%;%appdata%\hiper
 
 set moed=menujd
@@ -6,116 +48,117 @@ mode con cols=70 lines=14
 
 @echo off
 
-set  tapexamine=æœªçŸ¥é”™è¯¯
-set  hiperexamine=æœªçŸ¥é”™è¯¯
-set  wgetexamine=æœªçŸ¥é”™è¯¯
-set  chatfreeexamine=æœªçŸ¥é”™è¯¯
-set  saterhiperexamine=æœªçŸ¥é”™è¯¯
-set  saterhiperfreeexamine=æœªçŸ¥é”™è¯¯
-set v=1.0.0ï¼ˆå®Œç»“ç‰ˆï¼‰
-set qq=éŠ†?44390394éŠ†?
-set zz=æ¢¦æ¸¸
+set  tapexamine=Î´Öª´íÎó
+set  hiperexamine=Î´Öª´íÎó
+set  wgetexamine=Î´Öª´íÎó
+set  chatfreeexamine=Î´Öª´íÎó
+set  saterhiperexamine=Î´Öª´íÎó
+set  saterhiperfreeexamine=Î´Öª´íÎó
+set v=2.0.1
+set qq=944390394
+set zz=ÃÎÓÎÓëÀÖ×Ó
+set lezhi=::
 set /a Randomnumber=%random%%%50+1
 
 
 :Title
-if "%Randomnumber%"=="1" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ è¿™æ¬¡æˆ‘ä»¬æ›´æ–°äº†114514ä¸ªç‰¹æ€§ï¼
-if "%Randomnumber%"=="2" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ å½“ä½ çœ‹åˆ°è¿™æ¡tipï¼Œä½ ä¸€å®šå°±çœ‹åˆ°äº†å®ƒï¼
-if "%Randomnumber%"=="3" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ å‰æ–¹é€šå¾€å¿«ä¹
-if "%Randomnumber%"=="4" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ This is hiper worldï¼
-if "%Randomnumber%"=="5" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ä¹Ÿè¯•è¯•catoï¼
-if "%Randomnumber%"=="6" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ æ‘¸é±¼æ³•åˆ™
-if "%Randomnumber%"=="7" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ æ‘¸é±¼æ˜¯ä¸å¥½çš„è¡Œä¸º!
-if "%Randomnumber%"=="8" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ å’•å’•å’•ï¼Œåˆ·åˆ°è¿™æ¡tipéœ€è¦å¤šå°‘æ¬¡å‘¢
-if "%Randomnumber%"=="9" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ åˆç†å®‰æ’æ—¶é—´ï¼Œäº«å—å¥åº·ç”Ÿæ´»
-if "%Randomnumber%"=="10" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ å¯ä»¥å»çœ‹çœ‹æˆ‘çš„GitHubå“¦!
-if "%Randomnumber%"=="12" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ é¸½ç‹å†ä¸–
-if "%Randomnumber%"=="13" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ å¦‚æ­¤ç”Ÿæ´»30å¹´ï¼Œç›´åˆ°å¤§å¦å´©å¡Œã€‚
-if "%Randomnumber%"=="14" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ä½ å¼ºå½’ä½ å¼ºï¼Œæˆ‘æ°¸ä¸ç¤ºå¼±ã€‚
-if "%Randomnumber%"=="15" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ç›¸äº’é—´çš„æŠšæ…°æ ¹æœ¬æ²¡å¿…è¦åªè¦ä½ è¿˜å­˜åœ¨ç€å°±è¶³å¤Ÿ
-if "%Randomnumber%"=="16" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ä¸”å°†æ–°ç«è¯•æ–°èŒ¶ï¼Œè¯—é…’è¶å¹´å
-if "%Randomnumber%"=="17" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ é”™çš„ä¸æ˜¯æˆ‘ï¼Œè€Œæ˜¯è¿™ä¸ªä¸–ç•Œï¼
-if "%Randomnumber%"=="18" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ä½ è·³ä¸å‡ºè¿™ä¸ªä¸–ç•Œï¼Œæ˜¯å› ä¸ºä½ ä¸çŸ¥é“è¿™ä¸ªä¸–ç•Œæœ‰å¤šå¤§ï¼Œä¸€æ—¦ä½ çŸ¥é“äº†ï¼Œä½ å°±è¶…å‡ºäº†å®ƒã€‚
-if "%Randomnumber%"=="19" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ç›¸æ€äº†æ— ç›Šï¼Œæ‚”å½“åˆç›¸è§ã€‚
-if "%Randomnumber%"=="20" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ è‡ªç«¥å¹´èµ·ï¼Œæˆ‘ä¾¿ç‹¬è‡ªä¸€äººï¼Œç…§é¡¾ç€å†ä»£æ˜Ÿè¾°ã€‚
-if "%Randomnumber%"=="21" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ å½¼å²¸èŠ±èŠ±å¼€å½¼å²¸ï¼Œæ–­è‚ è‰è‰æ–­è‚è‚ ã€‚
-if "%Randomnumber%"=="22" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ç”Ÿå‘½ï¼Œä¸è¿‡åªæ˜¯ä¸€åœºéª—å±€ï¼Œä»ä½ å¼€å§‹å‘¼å¸çš„é‚£ä¸€åˆ»èµ·ï¼Œä½ å°±å·²ç»åœ¨æ…¢æ…¢æ­»äº¡äº†ã€‚
-if "%Randomnumber%"=="23" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ æˆ‘ä»¬ä¸èƒ½æˆä¸ºè´µæ—çš„åä»£ï¼Œä½†æˆ‘ä»¬å¯ä»¥å˜æˆè´µæ—çš„ç¥–å…ˆ
-if "%Randomnumber%"=="24" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ä¸–é—´å¥½ç‰©ä¸åšç‰¢ï¼Œå½©äº‘æ˜“æ•£ç‰ç’ƒè„†ã€‚
-if "%Randomnumber%"=="25" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ å½¼å²¸èŠ±èŠ±å¼€å½¼å²¸ï¼Œæ–­è‚ è‰è‰æ–­è‚è‚ ã€‚
-if "%Randomnumber%"=="26" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ æ˜¥å¿ƒè«å…±èŠ±äº‰å‘ï¼Œä¸€å¯¸ç›¸æ€ä¸€å¯¸ç°ï¼
-if "%Randomnumber%"=="27" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ æˆ‘è¦åšä¸€é¢—æ˜Ÿæ˜Ÿï¼Œæœ‰æ£±æœ‰è§’ï¼Œè¿˜ä¼šå‘å…‰ã€‚
-if "%Randomnumber%"=="28" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ æˆ‘æ¨è‡ªå·±ã€‚æˆ‘çˆ±è‡ªå·±ã€‚
-if "%Randomnumber%"=="29" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ æ˜†å±±ç‰ç¢å‡¤å‡°å«ï¼ŒèŠ™è“‰æ³£éœ²é¦™å…°ç¬‘ã€‚
-if "%Randomnumber%"=="30" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ åªæœ‰åˆ†ç¦»åæ‰èƒ½æ‡‚çš„äº‹ï¼Œå´æ²¡æœ‰äº†æ„Ÿæ…¨çš„æ—¶é—´ã€‚
-if "%Randomnumber%"=="31" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ åœ°ç‹±å¤ªå†·ï¼Œæˆ‘æ¥æ®‰ä½ ã€‚
-if "%Randomnumber%"=="32" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ äººç”Ÿåˆ°å¤„çŸ¥ä½•ä¼¼ï¼Œåº”ä¼¼é£é¸¿è¸é›ªæ³¥ã€‚
-if "%Randomnumber%"=="33" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ é£˜é›¶çš„å­¤é¸Ÿï¼Œä¹Ÿæœ‰æƒåˆ©å¯»æ±‚å¹¸ç¦å•Šã€‚
-if "%Randomnumber%"=="34" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ Think twice, code once.
-if "%Randomnumber%"=="35" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ Think twice, code once.
-if "%Randomnumber%"=="36" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ä»¥å‰å–œæ¬¢ä¸€ä¸ªäººï¼Œç°åœ¨å–œæ¬¢ä¸€ä¸ªäººã€‚
-if "%Randomnumber%"=="37" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ä»¥å‰å–œæ¬¢ä¸€ä¸ªäººï¼Œç°åœ¨å–œæ¬¢ä¸€ä¸ªäººã€‚
-if "%Randomnumber%"=="38" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ä»¥å‰å–œæ¬¢ä¸€ä¸ªäººï¼Œç°åœ¨å–œæ¬¢ä¸€ä¸ªäººã€‚
-if "%Randomnumber%"=="39" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ æ—¶é—´æ˜¯å­˜åœ¨è€…çš„æ—¶é—´ã€‚
-if "%Randomnumber%"=="40" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ éŸ¶åä¸ä¸ºå°‘å¹´ç•™ã€‚æ¨æ‚ æ‚ ã€‚å‡ æ—¶ä¼‘ã€‚
-if "%Randomnumber%"=="41" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ä½ çå¼€çœ¼ç›çš„æ—¶å€™ï¼Œæˆ‘åœ¨è¿™é‡Œã€‚
-if "%Randomnumber%"=="42" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ å¦‚æœå¯ä»¥çš„è¯ï¼Œæˆ‘ä¹Ÿæƒ³æˆä¸ºè¿™ä¸ªä¸–ç•Œä¸­ç‰¹æ®Šçš„å­˜åœ¨ã€‚
-if "%Randomnumber%"=="43" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ é‡åˆ°äº‹æƒ…ä¸èƒ½åä»¥å¾…æ¯™ï¼
-if "%Randomnumber%"=="44" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ æ²¡æœ‰å›å¿†å°±å»åˆ›é€ å›å¿†ï¼Œæ²¡æœ‰é“è·¯å°±å»å¼€è¾Ÿé“è·¯ã€‚
-if "%Randomnumber%"=="45" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ æ•°å­¦åˆ†æï¼Ÿæˆ‘å·²ç»å®Œå…¨æŒæ¡äº†ã€‚
-if "%Randomnumber%"=="46" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ æˆ‘ç­‰ä½ åä¸‰è½½ï¼Œä½ å¦‚ä½•å›æˆ‘ï¼Ÿ
-if "%Randomnumber%"=="47" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ äººç”Ÿå¤©åœ°ä¹‹é—´ï¼Œè‹¥ç™½é©¹ä¹‹è¿‡éš™ï¼Œå¿½ç„¶è€Œå·²ã€‚
-if "%Randomnumber%"=="48" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ ä»Šå¤©çš„æ—©é¤æ˜¯ï¼šæ—©è‹—çš„é¢åŒ…ã€ç§‹å­çš„æœé…±å’Œè§‚é“ƒçš„æœæ±~
-if "%Randomnumber%"=="49" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ åº­å‰è½å°½æ¢§æ¡ï¼Œæ°´è¾¹å¼€å½»èŠ™è“‰ã€‚
-if "%Randomnumber%"=="50" title %zz%è”æœºå¯åŠ¨å™¨ â”ƒ å„¿ç«¥æ•£å­¦å½’æ¥æ—©ï¼Œå¿™è¶ä¸œé£æ”¾çº¸é¸¢ã€‚
+if "%Randomnumber%"=="1" title %zz%Áª»úÆô¶¯Æ÷ ©§ Õâ´ÎÎÒÃÇ¸üĞÂÁË114514¸öÌØĞÔ£¡
+if "%Randomnumber%"=="2" title %zz%Áª»úÆô¶¯Æ÷ ©§ µ±Äã¿´µ½ÕâÌõtip£¬ÄãÒ»¶¨¾Í¿´µ½ÁËËü£¡
+if "%Randomnumber%"=="3" title %zz%Áª»úÆô¶¯Æ÷ ©§ Ç°·½Í¨Íù¿ìÀÖ
+if "%Randomnumber%"=="4" title %zz%Áª»úÆô¶¯Æ÷ ©§ This is hiper world£¡
+if "%Randomnumber%"=="5" title %zz%Áª»úÆô¶¯Æ÷ ©§ Ò²ÊÔÊÔcato£¡
+if "%Randomnumber%"=="6" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÃşÓã·¨Ôò
+if "%Randomnumber%"=="7" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÃşÓãÊÇ²»ºÃµÄĞĞÎª!
+if "%Randomnumber%"=="8" title %zz%Áª»úÆô¶¯Æ÷ ©§ ¹¾¹¾¹¾£¬Ë¢µ½ÕâÌõtipĞèÒª¶àÉÙ´ÎÄØ
+if "%Randomnumber%"=="9" title %zz%Áª»úÆô¶¯Æ÷ ©§ ºÏÀí°²ÅÅÊ±¼ä£¬ÏíÊÜ½¡¿µÉú»î
+if "%Randomnumber%"=="10" title %zz%Áª»úÆô¶¯Æ÷ ©§ ¿ÉÒÔÈ¥¿´¿´ÎÒµÄGitHubÅ¶!
+if "%Randomnumber%"=="12" title %zz%Áª»úÆô¶¯Æ÷ ©§ ¸ëÍõÔÙÊÀ
+if "%Randomnumber%"=="13" title %zz%Áª»úÆô¶¯Æ÷ ©§ Èç´ËÉú»î30Äê£¬Ö±µ½´óÏÃ±ÀËú¡£
+if "%Randomnumber%"=="14" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÄãÇ¿¹éÄãÇ¿£¬ÎÒÓÀ²»Ê¾Èõ¡£
+if "%Randomnumber%"=="15" title %zz%Áª»úÆô¶¯Æ÷ ©§ Ïà»¥¼äµÄ¸§Î¿¸ù±¾Ã»±ØÒªÖ»ÒªÄã»¹´æÔÚ×Å¾Í×ã¹»
+if "%Randomnumber%"=="16" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÇÒ½«ĞÂ»ğÊÔĞÂ²è£¬Ê«¾Æ³ÃÄê»ª
+if "%Randomnumber%"=="17" title %zz%Áª»úÆô¶¯Æ÷ ©§ ´íµÄ²»ÊÇÎÒ£¬¶øÊÇÕâ¸öÊÀ½ç£¡
+if "%Randomnumber%"=="18" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÄãÌø²»³öÕâ¸öÊÀ½ç£¬ÊÇÒòÎªÄã²»ÖªµÀÕâ¸öÊÀ½çÓĞ¶à´ó£¬Ò»µ©ÄãÖªµÀÁË£¬Äã¾Í³¬³öÁËËü¡£
+if "%Randomnumber%"=="19" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÏàË¼ÁËÎŞÒæ£¬»Úµ±³õÏà¼û¡£
+if "%Randomnumber%"=="20" title %zz%Áª»úÆô¶¯Æ÷ ©§ ×ÔÍ¯ÄêÆğ£¬ÎÒ±ã¶À×ÔÒ»ÈË£¬ÕÕ¹Ë×ÅÀú´úĞÇ³½¡£
+if "%Randomnumber%"=="21" title %zz%Áª»úÆô¶¯Æ÷ ©§ ±Ë°¶»¨»¨¿ª±Ë°¶£¬¶Ï³¦²İ²İ¶Ï¸Î³¦¡£
+if "%Randomnumber%"=="22" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÉúÃü£¬²»¹ıÖ»ÊÇÒ»³¡Æ­¾Ö£¬´ÓÄã¿ªÊ¼ºôÎüµÄÄÇÒ»¿ÌÆğ£¬Äã¾ÍÒÑ¾­ÔÚÂıÂıËÀÍöÁË¡£
+if "%Randomnumber%"=="23" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÎÒÃÇ²»ÄÜ³ÉÎª¹ó×åµÄºó´ú£¬µ«ÎÒÃÇ¿ÉÒÔ±ä³É¹ó×åµÄ×æÏÈ
+if "%Randomnumber%"=="24" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÊÀ¼äºÃÎï²»¼áÀÎ£¬²ÊÔÆÒ×É¢ÁğÁ§´à¡£
+if "%Randomnumber%"=="25" title %zz%Áª»úÆô¶¯Æ÷ ©§ ±Ë°¶»¨»¨¿ª±Ë°¶£¬¶Ï³¦²İ²İ¶Ï¸Î³¦¡£
+if "%Randomnumber%"=="26" title %zz%Áª»úÆô¶¯Æ÷ ©§ ´ºĞÄÄª¹²»¨Õù·¢£¬Ò»´çÏàË¼Ò»´ç»Ò£¡
+if "%Randomnumber%"=="27" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÎÒÒª×öÒ»¿ÅĞÇĞÇ£¬ÓĞÀâÓĞ½Ç£¬»¹»á·¢¹â¡£
+if "%Randomnumber%"=="28" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÎÒºŞ×Ô¼º¡£ÎÒ°®×Ô¼º¡£
+if "%Randomnumber%"=="29" title %zz%Áª»úÆô¶¯Æ÷ ©§ À¥É½ÓñËé·ï»Ë½Ğ£¬Ü½ÈØÆüÂ¶ÏãÀ¼Ğ¦¡£
+if "%Randomnumber%"=="30" title %zz%Áª»úÆô¶¯Æ÷ ©§ Ö»ÓĞ·ÖÀëºó²ÅÄÜ¶®µÄÊÂ£¬È´Ã»ÓĞÁË¸Ğ¿®µÄÊ±¼ä¡£
+if "%Randomnumber%"=="31" title %zz%Áª»úÆô¶¯Æ÷ ©§ µØÓüÌ«Àä£¬ÎÒÀ´Ñ³Äã¡£
+if "%Randomnumber%"=="32" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÈËÉúµ½´¦ÖªºÎËÆ£¬Ó¦ËÆ·ÉºèÌ¤Ñ©Äà¡£
+if "%Randomnumber%"=="33" title %zz%Áª»úÆô¶¯Æ÷ ©§ Æ®ÁãµÄ¹ÂÄñ£¬Ò²ÓĞÈ¨ÀûÑ°ÇóĞÒ¸£°¡¡£
+if "%Randomnumber%"=="34" title %zz%Áª»úÆô¶¯Æ÷ ©§ Think twice, code once.
+if "%Randomnumber%"=="35" title %zz%Áª»úÆô¶¯Æ÷ ©§ Think twice, code once.
+if "%Randomnumber%"=="36" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÒÔÇ°Ï²»¶Ò»¸öÈË£¬ÏÖÔÚÏ²»¶Ò»¸öÈË¡£
+if "%Randomnumber%"=="37" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÒÔÇ°Ï²»¶Ò»¸öÈË£¬ÏÖÔÚÏ²»¶Ò»¸öÈË¡£
+if "%Randomnumber%"=="38" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÒÔÇ°Ï²»¶Ò»¸öÈË£¬ÏÖÔÚÏ²»¶Ò»¸öÈË¡£
+if "%Randomnumber%"=="39" title %zz%Áª»úÆô¶¯Æ÷ ©§ Ê±¼äÊÇ´æÔÚÕßµÄÊ±¼ä¡£
+if "%Randomnumber%"=="40" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÉØ»ª²»ÎªÉÙÄêÁô¡£ºŞÓÆÓÆ¡£¼¸Ê±Ğİ¡£
+if "%Randomnumber%"=="41" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÄãÕö¿ªÑÛ¾¦µÄÊ±ºò£¬ÎÒÔÚÕâÀï¡£
+if "%Randomnumber%"=="42" title %zz%Áª»úÆô¶¯Æ÷ ©§ Èç¹û¿ÉÒÔµÄ»°£¬ÎÒÒ²Ïë³ÉÎªÕâ¸öÊÀ½çÖĞÌØÊâµÄ´æÔÚ¡£
+if "%Randomnumber%"=="43" title %zz%Áª»úÆô¶¯Æ÷ ©§ Óöµ½ÊÂÇé²»ÄÜ×øÒÔ´ı±Ğ£¡
+if "%Randomnumber%"=="44" title %zz%Áª»úÆô¶¯Æ÷ ©§ Ã»ÓĞ»ØÒä¾ÍÈ¥´´Ôì»ØÒä£¬Ã»ÓĞµÀÂ·¾ÍÈ¥¿ª±ÙµÀÂ·¡£
+if "%Randomnumber%"=="45" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÊıÑ§·ÖÎö£¿ÎÒÒÑ¾­ÍêÈ«ÕÆÎÕÁË¡£
+if "%Randomnumber%"=="46" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÎÒµÈÄãÊ®ÈıÔØ£¬ÄãÈçºÎ»ØÎÒ£¿
+if "%Randomnumber%"=="47" title %zz%Áª»úÆô¶¯Æ÷ ©§ ÈËÉúÌìµØÖ®¼ä£¬Èô°×¾ÔÖ®¹ıÏ¶£¬ºöÈ»¶øÒÑ¡£
+if "%Randomnumber%"=="48" title %zz%Áª»úÆô¶¯Æ÷ ©§ ½ñÌìµÄÔç²ÍÊÇ£ºÔçÃçµÄÃæ°ü¡¢Çï×ÓµÄ¹û½´ºÍ¹ÛÁåµÄ¹ûÖ­~
+if "%Randomnumber%"=="49" title %zz%Áª»úÆô¶¯Æ÷ ©§ Í¥Ç°Âä¾¡ÎàÍ©£¬Ë®±ß¿ª³¹Ü½ÈØ¡£
+if "%Randomnumber%"=="50" title %zz%Áª»úÆô¶¯Æ÷ ©§ ¶ùÍ¯É¢Ñ§¹éÀ´Ôç£¬Ã¦³Ã¶«·ç·ÅÖ½ğ°¡£
 
 
 
 goto Selftest
 
 :Selftest
-set tapexamine=æ­£å¸¸
-if not exist %appdata%\hiper\tap-windows-9.21.2.exe set tapexamine=æœªæ£€æµ‹åˆ°æ–‡ä»¶
-set hiperexamine=æ­£å¸¸
-if not exist %appdata%\hiper\hiper.exe set hiperexamine=æœªæ£€æµ‹åˆ°æ–‡ä»¶
-set  saterhiperexamine=æ­£å¸¸
-if not exist %appdata%\hiper\saterhiper.exe set saterhiperexamine=æœªæ£€æµ‹åˆ°æ–‡ä»¶
-set  saterhiperfreeexaminhe=æ­£å¸¸
-set  wgetexamine=æ­£å¸¸
-if not exist %appdata%\hiper\wget.exe set wgetexamine=æœªæ£€æµ‹åˆ°æ–‡ä»¶
-set  hprexamine=æ­£å¸¸
-if %hiperexamine%==æœªæ£€æµ‹åˆ°æ–‡ä»¶  goto error
-if %tapexamine%==æœªæ£€æµ‹åˆ°æ–‡ä»¶ goto error
-if %saterhiperexamine%==æœªæ£€æµ‹åˆ°æ–‡ä»¶ goto error
-if %saterhiperfreeexamine%==æœªæ£€æµ‹åˆ°æ–‡ä»¶ goto error
-if %wgetexamine%==æœªæ£€æµ‹åˆ°æ–‡ä»¶ goto error
-if %hprexamine%==æœªæ£€æµ‹åˆ°æ–‡ä»¶ goto error
+set tapexamine=Õı³£
+if not exist %appdata%\hiper\tap-windows-9.21.2.exe set tapexamine=Î´¼ì²âµ½ÎÄ¼ş
+set hiperexamine=Õı³£
+if not exist %appdata%\hiper\hiper.exe set hiperexamine=Î´¼ì²âµ½ÎÄ¼ş
+set  saterhiperexamine=Õı³£
+if not exist %appdata%\hiper\sater.exe set saterhiperexamine=Î´¼ì²âµ½ÎÄ¼ş
+set  saterhiperfreeexaminhe=Õı³£
+set  wgetexamine=Õı³£
+if not exist %appdata%\hiper\wget.exe set wgetexamine=Î´¼ì²âµ½ÎÄ¼ş
+set  hprexamine=Õı³£
+if %hiperexamine%==Î´¼ì²âµ½ÎÄ¼ş  goto error
+if %tapexamine%==Î´¼ì²âµ½ÎÄ¼ş goto error
+if %saterhiperexamine%==Î´¼ì²âµ½ÎÄ¼ş goto error
+if %saterhiperfreeexamine%==Î´¼ì²âµ½ÎÄ¼ş goto error
+if %wgetexamine%==Î´¼ì²âµ½ÎÄ¼ş goto error
+if %hprexamine%==Î´¼ì²âµ½ÎÄ¼ş goto error
 goto %moed%
 
 :error
-echo ------------------------è‡ªæ£€æŠ¥å‘Š--------------------------
-echo è‡ªæ£€é‡åˆ°é”™è¯¯ï¼Œè¯·æ£€æŸ¥æ–‡ä»¶ä½ç½®ï¼Œæˆ–é‡æ–°å¯åŠ¨æœ¬ç¨‹åº
-echo ç½‘å¡å®‰è£…ç¨‹åºï¼šã€%tapexamine%ã€‘
-echo hiperä¸»ç¨‹åº ï¼šã€%hiperexamine%ã€‘
-echo hiper plusä¸»ç¨‹åº ï¼šã€%hprexamine%ã€‘
-echo å‡­è¯è”æœºæ¨¡å—ï¼š ã€%saterhiperfreeexamine%ã€‘
-echo ä¸‹è½½æ¨¡å—ï¼šã€%wgetexamine%ã€‘
-echo ç½‘å¡çŠ¶æ€ï¼šã€%tapsater%ã€‘
-echo å¦‚æœä½ åœ¨æ­¤å¤„é‡åˆ°é—®é¢˜ï¼Œä¸”æ— æ³•è‡ªè¡Œè§£å†³ï¼Œè¯·è”ç³»QQï¼š944390394
-echo æ³¨æ„ï¼šæ—¶åˆ»ä¿æŒä¸€é¢—æ¸…é†’çš„å¤´è„‘å’Œä¸€é¢—è°¦è™šçš„å¿ƒçµä¼šè®©ä½ çš„é—®é¢˜æ›´å¿«å¾—åˆ°è§£å†³ï¼
+echo ------------------------×Ô¼ì±¨¸æ--------------------------
+echo ×Ô¼ìÓöµ½´íÎó£¬Çë¼ì²éÎÄ¼şÎ»ÖÃ£¬»òÖØĞÂÆô¶¯±¾³ÌĞò
+echo Íø¿¨°²×°³ÌĞò£º¡¾%tapexamine%¡¿
+echo hiperÖ÷³ÌĞò £º¡¾%hiperexamine%¡¿
+echo hiper plusÖ÷³ÌĞò £º¡¾%hprexamine%¡¿
+echo Æ¾Ö¤Áª»úÄ£¿é£º ¡¾%saterhiperfreeexamine%¡¿
+echo ÏÂÔØÄ£¿é£º¡¾%wgetexamine%¡¿
+echo Íø¿¨×´Ì¬£º¡¾%tapsater%¡¿
+echo Èç¹ûÄãÔÚ´Ë´¦Óöµ½ÎÊÌâ£¬ÇÒÎŞ·¨×ÔĞĞ½â¾ö£¬ÇëÁªÏµQQ£º944390394
+echo ×¢Òâ£ºÊ±¿Ì±£³ÖÒ»¿ÅÇåĞÑµÄÍ·ÄÔºÍÒ»¿ÅÇ«ĞéµÄĞÄÁé»áÈÃÄãµÄÎÊÌâ¸ü¿ìµÃµ½½â¾ö£¡
 echo.
-echo æŒ‰ä»»æ„é”®é€€å‡º
+echo °´ÈÎÒâ¼üÍË³ö
 pause>nul
 
 
 :zjj
-set tapexamine=æ­£å¸¸
-if not exist %appdata%\hiper\tap-windows-9.21.2.exe set tapexamine=æœªæ£€æµ‹åˆ°æ–‡ä»¶
-set hiperexamine=æ­£å¸¸
-if not exist %appdata%\hiper\hiper.exe set hiperexamine=æœªæ£€æµ‹åˆ°æ–‡ä»¶
+set tapexamine=Õı³£
+if not exist %appdata%\hiper\tap-windows-9.21.2.exe set tapexamine=Î´¼ì²âµ½ÎÄ¼ş
+set hiperexamine=Õı³£
+if not exist %appdata%\hiper\hiper.exe set hiperexamine=Î´¼ì²âµ½ÎÄ¼ş
 if %n% GEQ 60 goto error
-if %hiperexamine%==æœªæ£€æµ‹åˆ°æ–‡ä»¶  goto error
-if %tapexamine%==æœªæ£€æµ‹åˆ°æ–‡ä»¶ goto error
+if %hiperexamine%==Î´¼ì²âµ½ÎÄ¼ş  goto error
+if %tapexamine%==Î´¼ì²âµ½ÎÄ¼ş goto error
 goto abc
 
 :abc
@@ -127,8 +170,8 @@ set /a n+=1
 echo ********************************************
 echo ********************************************
 echo **                                        **
-echo **  æœªèƒ½æµ‹åˆ°hiperç¨‹åºï¼Œæ­£åœ¨å°è¯•é‡æ–°ä¸‹è½½ **
-echo **  å½“å‰é‡è¯•æ¬¡æ•°â†’%n%â†(60æ¬¡å°é¡¶)  **
+echo **  Î´ÄÜ²âµ½hiper³ÌĞò£¬ÕıÔÚ³¢ÊÔÖØĞÂÏÂÔØ **
+echo **  µ±Ç°ÖØÊÔ´ÎÊı¡ú%n%¡û(60´Î·â¶¥)  **
 echo ********************************************
 echo ********************************************
 %appdata%\hiper\wget.exe -q -P %appdata%\hiper -S -N -t 50  https://gitcode.net/to/hiper/-/blob/master/windows-386/hiper.exe
@@ -139,9 +182,9 @@ goto abc
 :shibai
 echo ********************************************
 echo ********************************************
-echo **      æœªèƒ½æµ‹åˆ°hiperç¨‹åºï¼Œä¸”æ— æ³•ä¸‹è½½       **
-echo **        è¯·æ£€æŸ¥ç½‘ç»œç¯å¢ƒæˆ–è”ç³»ç®¡ç†å‘˜          **
-echo **              ä½œè€…QQï¼š944390394               **
+echo **      Î´ÄÜ²âµ½hiper³ÌĞò£¬ÇÒÎŞ·¨ÏÂÔØ       **
+echo **        Çë¼ì²éÍøÂç»·¾³»òÁªÏµ¹ÜÀíÔ±          **
+echo **              ×÷ÕßQQ£º944390394               **
 echo ********************************************
 echo ********************************************
 pause
@@ -152,60 +195,59 @@ exit
 :menufz
 set ID=0
 set moed=menufz
-mode con cols=55 lines=27
+mode con cols=65 lines=27
 set /P OEM=<%appdata%\hiper\version.txt
-set tapsater=å·²å®‰è£…
-if not exist C:\Windows\System32\drivers\tap0901.sys set tapsater=æœªå®‰è£…
-ECHO.       ---------------HiPerå¯åŠ¨ç¨‹åº-----------
-ECHO.       -    ï¼ˆ1ï¼‰â†’ å®‰è£…HiPerè™šæ‹Ÿç½‘å¡â†      -
-ECHO.       -    ï¼ˆ2ï¼‰â†’ æ‰“å¼€mcæˆ¿é—´è¾…åŠ©å™¨â†      -
+set tapsater=ÒÑ°²×°
+if not exist C:\Windows\System32\drivers\tap0901.sys set tapsater=Î´°²×°
+ECHO.       ---------------HiPerÆô¶¯³ÌĞò-----------
+ECHO.       -    £¨1£©¡ú °²×°HiPerĞéÄâÍø¿¨¡û      -
+ECHO.       -    £¨2£©¡ú ´ò¿ªmc·¿¼ä¸¨ÖúÆ÷¡û      -
 ECHO.       ---------------------------------------
-ECHO.       -    ï¼ˆ3ï¼‰ å¯åŠ¨HiPerç¨‹åº              -
-ECHO.       -    ï¼ˆ4ï¼‰ åˆ›å»ºå¿«æ·æ–¹å¼åˆ°æ¡Œé¢         -
+ECHO.       -    £¨3£© Æô¶¯HiPer³ÌĞò              -
+ECHO.       -    £¨4£© ´´½¨¿ì½İ·½Ê½µ½×ÀÃæ         -
 ECHO.       ---------------------------------------
-ECHO.       -    ï¼ˆHï¼‰ æ‰“å¼€HiPerå¸®åŠ©              -
-ECHO.       -    ï¼ˆZï¼‰ è¿”å›ç®€æ˜“æ¨¡å¼               -
+ECHO.       -    £¨H£© ´ò¿ªHiPer°ïÖú              -
+ECHO.       -    £¨Z£© ·µ»Ø¼òÒ×Ä£Ê½               -
 ECHO.       ---------------------------------------
-ECHO.       -       hiperç‰ˆæœ¬ï¼šã€%OEM%ã€‘           -
-ECHO.       -       ç½‘å¡çŠ¶æ€ï¼šã€%tapsater%ã€‘          -
+ECHO.       -       hiper°æ±¾£º¡¾%OEM%¡¿           -
+ECHO.       -       Íø¿¨×´Ì¬£º¡¾%tapsater%¡¿          -
 ECHO.       ---------------------------------------
-ECHO.       -  æ³¨ï¼šæ— å‡­è¯å…¥ç½‘æ¯30åˆ†é’Ÿåˆ‡æ–­ä¸€æ¬¡è¿æ¥ -
-ECHO.       -      ç‰ˆæœ¬ï¼š%v%   ä½œè€…ï¼š%zz%   -
-ECHO.       -      BUGåé¦ˆ/é‚€è¯·ç è´­ä¹°/ä½¿ç”¨å’¨è¯¢    -
-ECHO.       -             ä½œè€…QQ:%qq%        -
-ECHO.       -          å®˜æ–¹â‘ ç¾¤ï¼š235256586        -
-ECHO.       -          å®˜æ–¹â‘¡ç¾¤ï¼š212927890        -
-ECHO.       -          å®˜æ–¹â‘¢ç¾¤ï¼š93365639        -
-ECHO.       -          å®˜æ–¹â‘£ç¾¤ï¼š93364993        -
+ECHO.       -  ×¢£ºÎŞÆ¾Ö¤ÈëÍøÃ¿30·ÖÖÓÇĞ¶ÏÒ»´ÎÁ¬½Ó -
+ECHO.       -      °æ±¾£º%v%   ×÷Õß£º%zz%   -
+ECHO.       -      BUG·´À¡/ÑûÇëÂë¹ºÂò/Ê¹ÓÃ×ÉÑ¯    -
+ECHO.       -             ×÷ÕßQQ:%qq%        -
+ECHO.       - ¹Ù·½¢ÙÈº£º235256586£¨»ğ±¬£©  ¹Ù·½¢ÚÈº£º212927890£¨»ğ±¬£© -
+ECHO.       - ¹Ù·½¢ÛÈº£º93365639 £¨»ğ±¬£©  ¹Ù·½¢ÜÈº£º93364993 £¨»ğ±¬£© -
+ECHO.       - ¹Ù·½¢İÈº£º93364993 £¨»ğ±¬£©      -
 ECHO.       ---------------------------------------
-ECHO.       -        å½“å‰æ—¥æœŸï¼š%date%    -
-ECHO.       -          å¯åŠ¨æ—¶é—´ï¼š%time%      -
+ECHO.       -        µ±Ç°ÈÕÆÚ£º%date%    -
+ECHO.       -          Æô¶¯Ê±¼ä£º%time%      -
 ECHO.       ---------------------------------------
-echo.è¯·è¾“å…¥é€‰æ‹©é¡¹ç›®çš„åºå·ï¼š
+echo.ÇëÊäÈëÑ¡ÔñÏîÄ¿µÄĞòºÅ£º
 set /p ID=
-if â€œ%id%â€==â€œ1â€ goto Installationtap
+if ¡°%id%¡±==¡°1¡± goto Installationtap
 
-if â€œ%id%â€==â€œ3â€ goto saterHiPer
+if ¡°%id%¡±==¡°3¡± goto saterHiPer
 
-if â€œ%id%â€==â€œ2â€ start mcfj
+if ¡°%id%¡±==¡°2¡± start mcfj
 
-if â€œ%id%â€==â€œ4â€ goto cmd5
+if ¡°%id%¡±==¡°4¡± goto cmd5
 
-if â€œ%id%â€==â€œ114514â€ goto cmd8
+if ¡°%id%¡±==¡°114514¡± goto cmd8
 
-if â€œ%id%â€==â€œHâ€ goto help
+if ¡°%id%¡±==¡°H¡± goto help
 
-if â€œ%id%â€==â€œhâ€ goto help
+if ¡°%id%¡±==¡°h¡± goto help
 
-if â€œ%id%â€==â€œhiper-kitâ€ goto kit
+if ¡°%id%¡±==¡°hiper-kit¡± goto kit
 
-if â€œ%id%â€==â€œhiper-kitmainâ€ goto kitmain
+if ¡°%id%¡±==¡°hiper-kitmain¡± goto kitmain
 
-if â€œ%id%â€==â€œzâ€ goto menujd
+if ¡°%id%¡±==¡°z¡± goto menujd
 
-if â€œ%id%â€==â€œZâ€ goto helpjd
+if ¡°%id%¡±==¡°Z¡± goto helpjd
 
-if â€œ%id%â€==â€œopenappdataâ€ start %appdata%\hiper
+if ¡°%id%¡±==¡°openappdata¡± start %appdata%\hiper
 
 goto %moed%
 
@@ -214,28 +256,30 @@ set eID=0
 set moed=menujd
 mode con cols=62 lines=15
 set /P OEM=<%appdata%\hiper\version.txt
-set tapsater=å·²å®‰è£…
+set tapsater=ÒÑ°²×°
 ECHO. 
-ECHO.          ----------HiPerå¯åŠ¨ç¨‹åºï¼ˆç®€æ˜“æ¨¡å¼ï¼‰----
+ECHO.          --------------HiPerÆô¶¯³ÌĞò------------
 ECHO.          -                                     -
-ECHO.          -    ï¼ˆ1ï¼‰â†’   å¯åŠ¨HiPerç¨‹åº  â†      -
+ECHO.          -      £¨1£©¡ú   Æô¶¯HiPer³ÌĞò  ¡û     -
+ECHO.          -                                     -
+ECHO.          -      £¨2£©¡ú   ´ò¿ªHiPer°ïÖú  ¡û     -
 ECHO.          -                                     -
 ECHO.          ---------------------------------------
-ECHO.          -    ï¼ˆZï¼‰â†’   èµèµä½œè€…ï¼ˆæ¢¦æ¸¸ï¼‰   â†  -
-ECHO.          -    ï¼ˆHï¼‰â†’   è¿›å…¥æ™®é€šæ¨¡å¼   â†      -
+ECHO.          - Æô¶¯Æ÷°æ±¾£º%v%   hiper°æ±¾£º%OEM% -
 ECHO.          ---------------------------------------
-echo.è¯·è¾“å…¥é€‰æ‹©é¡¹ç›®çš„åºå·ï¼š
+%lezhi%ECHO.          -    £¨Z£©¡ú   ÔŞÉÍ×÷Õß£¨ÃÎÓÎ£©   ¡û  -
+%lezhi%ECHO.          -    £¨H£©¡ú   ½øÈëÆÕÍ¨Ä£Ê½   ¡û      -
+%lezhi%ECHO.          ---------------------------------------
+echo.ÇëÊäÈëÑ¡ÔñÏîÄ¿µÄĞòºÅ£º
 set /p eID=
 
-if â€œ%eid%â€==â€œ1â€ goto saterHiPer
-
-
-if â€œ%eid%â€==â€œHâ€ goto menufz
-
-if â€œ%eid%â€==â€œhâ€ goto menufz
-if â€œ%eid%â€==â€œZâ€ goto zs
-
-if â€œ%eid%â€==â€œzâ€ goto zs
+if ¡°%eid%¡±==¡°1¡± goto saterHiPer
+if ¡°%eid%¡±==¡°2¡± goto help
+if ¡°%eid%¡±==¡°H¡± goto menufz
+if ¡°%eid%¡±==¡°h¡± goto menufz
+if ¡°%eid%¡±==¡°Z¡± goto zs
+if ¡°%eid%¡±==¡°z¡± goto zs
+if ¡°%eid%¡±==¡°exit¡± exit
 goto %moed%
 
 
@@ -249,27 +293,27 @@ goto %moed%
 :Installationtap
 cls
 if not exist C:\Windows\System32\drivers\tap0901.sys goto saterapp
-::è¿™é‡Œæ˜¯åˆ¤æ–­ç”¨æˆ·æ˜¯å¦å®‰è£…è¿‡è™šæ‹Ÿç½‘å¡ https://zhidao.baidu.com/question/1046357538354738819.html
+::ÕâÀïÊÇÅĞ¶ÏÓÃ»§ÊÇ·ñ°²×°¹ıĞéÄâÍø¿¨ https://zhidao.baidu.com/question/1046357538354738819.html
 echo         -                                -
-echo         -   æ£€æµ‹åˆ°ä½ å·²ç»å®‰è£…äº†è™šæ‹Ÿç½‘å¡   -
-echo         -       ç¡®å®šè¦ç»§ç»­å®‰è£…å—         -
+echo         -   ¼ì²âµ½ÄãÒÑ¾­°²×°ÁËĞéÄâÍø¿¨   -
+echo         -       È·¶¨Òª¼ÌĞø°²×°Âğ         -
 echo         -                                -
-echo          è¾“å…¥ y ç¡®è®¤å®‰è£…ï¼›è¾“å…¥ n ç»“æŸå®‰è£…
+echo          ÊäÈë y È·ÈÏ°²×°£»ÊäÈë n ½áÊø°²×°
 
 set /p ID=
-if â€œ%id%â€==â€œYâ€ goto saterapp
-if â€œ%id%â€==â€œyâ€ goto saterapp
-if â€œ%id%â€==â€œNâ€ goto menu
-if â€œ%id%â€==â€œnâ€ goto menu
+if ¡°%id%¡±==¡°Y¡± goto saterapp
+if ¡°%id%¡±==¡°y¡± goto saterapp
+if ¡°%id%¡±==¡°N¡± goto menu
+if ¡°%id%¡±==¡°n¡± goto menu
 goto %moed%
 
 :saterapp
 cls
 echo. -
-echo. -è¯·å‹¿æ›´æ”¹å®‰è£…è·¯å¾„ï¼Œé»˜è®¤å³å¯
-echo. -å®‰è£…ç¨‹åºå·²æ‰“å¼€ï¼Œå®‰è£…å³å¯ï¼
-echo. -æœ¬ç¨‹åºä¸ä¼šå¯¹ä½ çš„è®¡ç®—æœºé€ æˆä¼¤å®³ï¼Œè¯·æ”¾å¿ƒ
-echo. -è‹¥æœ‰æ€æ¯’è½¯ä»¶æ‹¦æˆªï¼Œè¯·æ¢å¤ä»–å¹¶åŠ å…¥ç™½åå•
+echo. -ÇëÎğ¸ü¸Ä°²×°Â·¾¶£¬Ä¬ÈÏ¼´¿É
+echo. -°²×°³ÌĞòÒÑ´ò¿ª£¬°²×°¼´¿É£¡
+echo. -±¾³ÌĞò²»»á¶ÔÄãµÄ¼ÆËã»úÔì³ÉÉËº¦£¬Çë·ÅĞÄ
+echo. -ÈôÓĞÉ±¶¾Èí¼şÀ¹½Ø£¬Çë»Ö¸´Ëû²¢¼ÓÈë°×Ãûµ¥
 echo. -
 call %appdata%\hiper\tap-windows-9.21.2.exe
 goto %moed%
@@ -283,24 +327,24 @@ cls
 echo ********************************************
 echo ********************************************
 echo **                                        **
-echo **  æˆ¿ä¸»æ–¹è¾“å…¥ï¼ˆ1ï¼‰     åŠ å…¥æ–¹è¾“å…¥ï¼ˆ2ï¼‰   **
+echo **  ·¿Ö÷·½ÊäÈë£¨1£©     ¼ÓÈë·½ÊäÈë£¨2£©   **
 echo **                                        **
 echo ********************************************
 echo ********************************************
-set /p eeID=è¯·é€‰æ‹©å¯åŠ¨æ¨¡å¼ï¼š
-if â€œ%eeid%â€==â€œ1â€ goto jr1
-if â€œ%eeid%â€==â€œ2â€ goto jr2
+set /p eeID=ÇëÑ¡ÔñÆô¶¯Ä£Ê½£º
+if ¡°%eeid%¡±==¡°1¡± goto jr1
+if ¡°%eeid%¡±==¡°2¡± goto jr2
 goto qianzhi
 
 :qianzhi
 if exist C:\Windows\System32\drivers\tap0901.sys del %appdata%\hiper\wintun.dll
-if â€œ%eeid%â€==â€œ1â€ goto jr1
-if â€œ%eeid%â€==â€œ2â€ goto jr2
+if ¡°%eeid%¡±==¡°1¡± goto jr1
+if ¡°%eeid%¡±==¡°2¡± goto jr2
 goto menujd
 
 :jr1
 if exist C:\Windows\System32\drivers\tap0901.sys del %appdata%\hiper\wintun.dll
-start saterhiper
+start sater
 exit
 goto menujd
 
@@ -308,7 +352,7 @@ goto menujd
 :jr2
 if exist C:\Windows\System32\drivers\tap0901.sys del %appdata%\hiper\wintun.dll
 start mcfj
-start saterhiper
+start sater
 exit
 goto menujd
 
@@ -316,33 +360,33 @@ goto menujd
 
 :cmd5
 @echo off
-set "exe=%zz%è”æœºå¯åŠ¨å™¨.exe"
-set "lnk=%zz%è”æœºå¯åŠ¨å™¨"
+set "exe=%zz%Áª»úÆô¶¯Æ÷.exe"
+set "lnk=%zz%Áª»úÆô¶¯Æ÷"
 mshta VBScript:Execute("Set a=CreateObject(""WScript.Shell""):Set b=a.CreateShortcut(a.SpecialFolders(""Desktop"") & ""\%lnk%.lnk""):b.TargetPath=""%~dp0%exe%"":b.WorkingDirectory=""%~dp0"":b.Save:close")
-echo å®Œæˆ
+echo Íê³É
 cls
 goto menujd
 
 
 :zj
-for /F %%i in ('ipconfig /allï½œfindstr TAP') do ( set drv=%%i)
+for /F %%i in ('ipconfig /all£üfindstr TAP') do ( set drv=%%i)
 cls
-echo. ------------------------è‡ªæ£€æŠ¥å‘Š----------------------
-echo. ç½‘å¡å®‰è£…ç¨‹åºï¼šã€%tapexamine%ã€‘
+echo. ------------------------×Ô¼ì±¨¸æ----------------------
+echo. Íø¿¨°²×°³ÌĞò£º¡¾%tapexamine%¡¿
 echo.
-echo. hiperä¸»ç¨‹åº ï¼šã€%hiperexamine%ã€‘     hiperç‰ˆæœ¬ï¼šã€%OEM%ã€‘
+echo. hiperÖ÷³ÌĞò £º¡¾%hiperexamine%¡¿     hiper°æ±¾£º¡¾%OEM%¡¿
 echo.
-echo. èŠå¤©ç¨‹åºï¼š    ã€%chatfreeexamine%ã€‘
+echo. ÁÄÌì³ÌĞò£º    ¡¾%chatfreeexamine%¡¿
 echo.
-echo. ä¸‹è½½æ¨¡å—ï¼š    ã€%wgetexamine%ã€‘
+echo. ÏÂÔØÄ£¿é£º    ¡¾%wgetexamine%¡¿
 echo.
-echo. ç½‘å¡çŠ¶æ€ï¼š    ã€%tapsater%ã€‘
+echo. Íø¿¨×´Ì¬£º    ¡¾%tapsater%¡¿
 echo.
-echo. ç½‘å¡ï¼š        ã€%drv%ã€‘
+echo. Íø¿¨£º        ¡¾%drv%¡¿
 echo.
-echo. ç‰ˆæœ¬ï¼š%v%
+echo. °æ±¾£º%v%
 echo.
-echo. æ—¥æœŸï¼š%date%        æ—¶é—´ï¼š%time%    
+echo. ÈÕÆÚ£º%date%        Ê±¼ä£º%time%    
 echo. -------------------------------------------------------
 pause
 goto  %moed%
@@ -356,7 +400,7 @@ goto menu
 :UP
 %appdata%\hiper\wget.exe  -P %appdata%\hiper -S -N -t 50   https://gitcode.net/to/hiper/-/blob/master/windows-386/hiper.exe
 %appdata%\hiper\wget.exe  -P %appdata%\hiper  -S -N -t 50  https://gitcode.net/to/hiper/-/raw/master/tap-windows-9.21.2.exe
-%appdata%\hiper\wget.exe  -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/version.txt
+%appdata%\hiper\wget.exe  -P %appdata%\hiper  -S -N -t 50  https://ÄãµÄcosµØÖ·/version.txt
 goto Title
 pause
 cls
@@ -365,17 +409,17 @@ goto menu
 
 :cmd8
 cls
-echo               ã€å½©è›‹ã€‘å¥½è‡­çš„æ•°å­—å•Š @a@
+echo               ¡¾²Êµ°¡¿ºÃ³ôµÄÊı×Ö°¡ @a@
 ECHO.
 ECHO.
 ECHO.
-ECHO.     -------------------é¸£è°¢åˆ—è¡¨------------------
-ECHO.     -      çŒ«çŒ«     æä¾›hiperä¸»ç¨‹åºåŠæŠ€æœ¯æ”¯æŒ   -
-ECHO.     -   æ¢¦æ¸¸æ³ªä¸–    ç¼–å†™æœ¬ç¨‹åºï¼Œæä¾›æ›´æ–°æœåŠ¡    -
-ECHO.     -   èµ·é£äº†å—    ç¼–å†™æœ¬ç¨‹åºï¼Œæä¾›å¸®åŠ©        -
-ECHO.     -     çƒ¨        æä¾›æœ‰è¶£çš„æ ‡é¢˜åç¼€          -
-ECHO.     -é‡ç”Ÿçš„å°ä¹å­ æä¾›éå¸¸æœ‰ç”¨çš„æ•™ç¨‹ä»¥åŠèµ„é‡‘æ”¯æŒ-
-ECHO.     -------------æ„Ÿè°¢ä»¥ä¸Šäººå‘˜çš„å¤§åŠ›æ”¯æŒ----------
+ECHO.     -------------------ÃùĞ»ÁĞ±í------------------
+ECHO.     -      Ã¨Ã¨     Ìá¹©hiperÖ÷³ÌĞò¼°¼¼ÊõÖ§³Ö   -
+ECHO.     -   ÃÎÓÎÀáÊÀ    ±àĞ´±¾³ÌĞò£¬Ìá¹©¸üĞÂ·şÎñ    -
+ECHO.     -   Æğ·çÁËÂğ    Ìá¹©°ïÖú        -
+ECHO.     -     ìÇ        Ìá¹©ÓĞÈ¤µÄ±êÌâºó×º          -
+ECHO.     -Ò°ÉúµÄĞ¡ÀÖ×Ó Ìá¹©·Ç³£ÓĞÓÃµÄ½Ì³ÌÒÔ¼°×Ê½ğÖ§³Ö-
+ECHO.     -------------¸ĞĞ»ÒÔÉÏÈËÔ±µÄ´óÁ¦Ö§³Ö----------
 ECHO. 
 ECHO. 
 ECHO. 
@@ -385,10 +429,10 @@ goto %moed%
 
 :kit
 
-%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50 https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/hiper-kit.exe
+%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50 https://ÄãµÄcosµØÖ·/hiper-kit.exe
 if not exist %appdata%\hiper\hiper-kit.exe goto kitcs
 echo.
-echo. æˆåŠŸ
+echo. ³É¹¦
 echo
 pause
 goto menufz
@@ -398,20 +442,20 @@ set /a kit+=1
 echo ********************************************
 echo ********************************************
 echo **                                        **
-echo **  æœªèƒ½ä¸‹è½½æµ‹è¯•ç¨‹åºï¼Œæ­£åœ¨å°è¯•é‡æ–°ä¸‹è½½ **
-echo **  å½“å‰é‡è¯•æ¬¡æ•°â†’%n%â†(60æ¬¡å°é¡¶)  **
+echo **  Î´ÄÜÏÂÔØ²âÊÔ³ÌĞò£¬ÕıÔÚ³¢ÊÔÖØĞÂÏÂÔØ **
+echo **  µ±Ç°ÖØÊÔ´ÎÊı¡ú%n%¡û(60´Î·â¶¥)  **
 echo ********************************************
 echo ********************************************
-%appdata%\hiper\wget.exe -q -P %appdata%\hiper -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/hiper.exe
-%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50  https://matrix-1300179650.cos.ap-shanghai.myqcloud.com/res/tap-windows.exe
+%appdata%\hiper\wget.exe -q -P %appdata%\hiper -S -N -t 50  https://ÄãµÄcosµØÖ·/hiper.exe
+%appdata%\hiper\wget.exe  -q -P %appdata%\hiper  -S -N -t 50  https://ÄãµÄcosµØÖ·/tap-windows.exe
 if %kit% GEQ 60 goto shibai
 goto kitcsshibai
 
 :kitcsshibai
 echo ********************************************
 echo ********************************************
-echo **      æœªèƒ½ä¸‹è½½æµ‹è¯•ç¨‹åºï¼Œä¸”æ— æ³•ä¸‹è½½       **
-echo **        è¯·æ£€æŸ¥ç½‘ç»œç¯å¢ƒæˆ–è”ç³»ç®¡ç†å‘˜          **
+echo **      Î´ÄÜÏÂÔØ²âÊÔ³ÌĞò£¬ÇÒÎŞ·¨ÏÂÔØ       **
+echo **        Çë¼ì²éÍøÂç»·¾³»òÁªÏµ¹ÜÀíÔ±          **
 echo ********************************************
 echo ********************************************
 pause
@@ -419,23 +463,23 @@ cls
 exit
 
 :kitmain
-ECHO.       ---------------kitå¸®åŠ©é¡µé¢-----------
-ECHO.       -    ï¼ˆ1ï¼‰ hiper-kit l                   -
-ECHO.       -    ï¼ˆ2ï¼‰ hiper-kit l --server      -
-ECHO.       -    ï¼ˆ3ï¼‰ hiper-kit t  -
-ECHO.       -    ï¼ˆ4ï¼‰ hiper-kit t --server        -
-ECHO.       -    ï¼ˆHï¼‰ å›åˆ°ä¸»èœå•                 -
-ECHO.       -    éä¸“ä¸šäººå£«è¯·å‹¿ä½¿ç”¨æ­¤å‚æ•°ï¼Œé¿å…å¸¦æ¥éº»çƒ¦                 -
-ECHO.       -    æ­¤å‚æ•°ä¸ºæµ‹è¯•äººå‘˜ä¸“ä¸šï¼Œå¦‚ä¸å°å¿ƒæ‰“å¼€è¯·ç›´æ¥è¿”å›ä¸»èœå•                 -
+ECHO.       ---------------kit°ïÖúÒ³Ãæ-----------
+ECHO.       -    £¨1£© hiper-kit l                   -
+ECHO.       -    £¨2£© hiper-kit l --server      -
+ECHO.       -    £¨3£© hiper-kit t  -
+ECHO.       -    £¨4£© hiper-kit t --server        -
+ECHO.       -    £¨H£© »Øµ½Ö÷²Ëµ¥                 -
+ECHO.       -    ·Ç×¨ÒµÈËÊ¿ÇëÎğÊ¹ÓÃ´Ë²ÎÊı£¬±ÜÃâ´øÀ´Âé·³                 -
+ECHO.       -    ´Ë²ÎÊıÎª²âÊÔÈËÔ±×¨Òµ£¬Èç²»Ğ¡ĞÄ´ò¿ªÇëÖ±½Ó·µ»ØÖ÷²Ëµ¥                 -
 echo.       ---------------------------------------
-echo.è¯·è¾“å…¥é€‰æ‹©é¡¹ç›®çš„åºå·ï¼š
+echo.ÇëÊäÈëÑ¡ÔñÏîÄ¿µÄĞòºÅ£º
 set /p kit=
-if â€œ%kit%â€==â€œ1â€ start cmd /k %appdata%\hiper\hiper-kit.exe l
-if â€œ%kit%â€==â€œ2â€ start cmd /k %appdata%\hiper\hiper-kit.exe l --server
-if â€œ%kit%â€==â€œ3â€ start cmd /k %appdata%\hiper\hiper-kit.exe t  -
-if â€œ%kit%â€==â€œ4â€ start cmd /k %appdata%\hiper\hiper-kit.exe t --server
-if â€œ%kit%â€==â€œHâ€ goto menu
-if â€œ%kit%â€==â€œhâ€ goto menu
+if ¡°%kit%¡±==¡°1¡± start cmd /k %appdata%\hiper\hiper-kit.exe l
+if ¡°%kit%¡±==¡°2¡± start cmd /k %appdata%\hiper\hiper-kit.exe l --server
+if ¡°%kit%¡±==¡°3¡± start cmd /k %appdata%\hiper\hiper-kit.exe t  -
+if ¡°%kit%¡±==¡°4¡± start cmd /k %appdata%\hiper\hiper-kit.exe t --server
+if ¡°%kit%¡±==¡°H¡± goto menu
+if ¡°%kit%¡±==¡°h¡± goto menu
 goto kitmain
 
 
@@ -449,31 +493,31 @@ goto kitmain
 :help
 set help=0
 cls
-ECHO.       ---------------HiPerå¸®åŠ©é¡µé¢-----------
-ECHO.       -    ï¼ˆ1ï¼‰ æ‰“å¼€å‡­è¯è´­ä¹°é¡µé¢(è´§å¸å…‘æ¢) -
-ECHO.       -    ï¼ˆ2ï¼‰ æ‰“å¼€å‡­è¯è´­ä¹°é¡µé¢(ç§¯åˆ†å…‘æ¢) -
-ECHO.       -    ï¼ˆ3ï¼‰ æ‰“å¼€HiPeræ•™ç¨‹ ï¼ˆèµ·é£äº†å—ï¼‰ -
-ECHO.       -    ï¼ˆ4ï¼‰ æ‰“å¼€HiPeræ•™ç¨‹ ï¼ˆæ¢¦æ¸¸æ³ªä¸–ï¼‰ -
-ECHO.       -    ï¼ˆ5ï¼‰ æ‰“å¼€HiPeræ•™ç¨‹ ï¼ˆé‡ç”Ÿçš„å°ä¹å­ï¼‰ -
-ECHO.       -    ï¼ˆ5ï¼‰ æ‰‹åŠ¨æ£€æŸ¥å¯åŠ¨å™¨æ›´æ–°          -
-ECHO.       -    ï¼ˆJï¼‰ æ‰‹åŠ¨æ£€æŸ¥æ–‡ä»¶å®Œæ•´åº¦         -
-ECHO.       -    ï¼ˆUï¼‰ æ‰‹åŠ¨æ£€æŸ¥hiperæ›´æ–°          -
-ECHO.       -    ï¼ˆHï¼‰ å›åˆ°ä¸»èœå•                 -
+ECHO.       ---------------HiPer°ïÖúÒ³Ãæ-----------
+ECHO.       -    £¨1£© ´ò¿ªÆ¾Ö¤¹ºÂòÒ³Ãæ(»õ±Ò¶Ò»») -
+ECHO.       -    £¨2£© ´ò¿ªÆ¾Ö¤¹ºÂòÒ³Ãæ(»ı·Ö¶Ò»») -
+ECHO.       -    £¨3£© ´ò¿ªHiPer½Ì³Ì £¨Æğ·çÁËÂğ£© -
+ECHO.       -    £¨4£© ´ò¿ªHiPer½Ì³Ì £¨ÃÎÓÎÀáÊÀ£© -
+ECHO.       -    £¨5£© ´ò¿ªHiPer½Ì³Ì £¨Ò°ÉúµÄĞ¡ÀÖ×Ó£© -
+ECHO.       -    £¨5£© ÊÖ¶¯¼ì²éÆô¶¯Æ÷¸üĞÂ          -
+ECHO.       -    £¨J£© ÊÖ¶¯¼ì²éÎÄ¼şÍêÕû¶È         -
+ECHO.       -    £¨U£© ÊÖ¶¯¼ì²éhiper¸üĞÂ          -
+ECHO.       -    £¨H£© »Øµ½Ö÷²Ëµ¥                 -
 echo.       ---------------------------------------
-echo.è¯·è¾“å…¥é€‰æ‹©é¡¹ç›®çš„åºå·ï¼š
+echo.ÇëÊäÈëÑ¡ÔñÏîÄ¿µÄĞòºÅ£º
 set /p help=
-if â€œ%help%â€==â€œ1â€ goto help1
-if â€œ%help%â€==â€œ2â€ goto help2
-if â€œ%help%â€==â€œ3â€ goto help3
-if â€œ%help%â€==â€œ4â€ goto help4
-if â€œ%help%â€==â€œ5â€ goto help6
-if â€œ%help%â€==â€œ6â€ goto help5
-if â€œ%help%â€==â€œHâ€ goto %moed%
-if â€œ%help%â€==â€œhâ€ goto  %moed%
-if â€œ%help%â€==â€œuâ€ goto UP
-if â€œ%help%â€==â€œUâ€ goto UP
-if â€œ%help%â€==â€œJâ€ goto zj
-if â€œ%help%â€==â€œjâ€ goto zj
+if ¡°%help%¡±==¡°1¡± goto help1
+if ¡°%help%¡±==¡°2¡± goto help2
+if ¡°%help%¡±==¡°3¡± goto help3
+if ¡°%help%¡±==¡°4¡± goto help4
+if ¡°%help%¡±==¡°5¡± goto help6
+if ¡°%help%¡±==¡°6¡± goto help5
+if ¡°%help%¡±==¡°H¡± goto %moed%
+if ¡°%help%¡±==¡°h¡± goto  %moed%
+if ¡°%help%¡±==¡°u¡± goto UP
+if ¡°%help%¡±==¡°U¡± goto UP
+if ¡°%help%¡±==¡°J¡± goto zj
+if ¡°%help%¡±==¡°j¡± goto zj
 goto help
 
 :help1
