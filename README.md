@@ -1,4 +1,4 @@
-# hiperapp
+# 梦游HiPer启动器
 
 source code 为源代码
 
@@ -12,19 +12,18 @@ compilation 为编译后文件
  -   梦游泪世    编写本程序，提供更新服务    
  -   起风了吗    编写本程序，提供帮助        
  -   烨          提供有趣的标题后缀         
- 
  - 野生的小乐子 提供非常有用的教程以及资金支持
  
  ---------------感谢以上人员的大力支持--------
 
-hiper官网：https://mcer.cn/?ref=azAtwBwzp
+HiPer官网：https://mcer.cn/?ref=azAtwBwzp
 
-hiper作者：猫猫
+HiPer作者：猫猫
 
 本程序只是一个方便启动hiper的脚本
 
 
-目前版本：1.0.0
+目前版本：2.0.0
 
 注意分别
 
